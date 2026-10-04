@@ -1,6 +1,29 @@
 {
+  "version": "5.2.0",
   "active_calculators": 65,
   "groups": 16,
-  "generated_urls": 66,
-  "base_url": "https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators"
+  "generated_urls": 83,
+  "base_url": "https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators",
+  "features": [
+    "bilingual",
+    "result interpretation",
+    "dark-light",
+    "threejs",
+    "iframe mode",
+    "seo faq",
+    "assessments",
+    "trackers",
+    "lab interpreter",
+    "food database integration",
+    "MediNutrition integration",
+    "dashboard",
+    "planner",
+    "reports",
+    "local-only profile",
+    "privacy center",
+    "personalization",
+    "optional Firebase auth",
+    "hybrid local-first auto sync",
+    "cross-device sync"
+  ]
 }

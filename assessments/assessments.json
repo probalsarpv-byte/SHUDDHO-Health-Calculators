@@ -1,0 +1,499 @@
+[
+  {
+    "id": "general",
+    "en": "General Health Assessment",
+    "bn": "সাধারণ স্বাস্থ্য মূল্যায়ন",
+    "qs": [
+      [
+        "activity",
+        "How many days/week are you active for 30+ minutes?",
+        "সপ্তাহে কতদিন ৩০+ মিনিট active থাকেন?",
+        0,
+        7
+      ],
+      [
+        "sleep",
+        "Average sleep hours/night?",
+        "গড়ে রাতে কত ঘণ্টা ঘুমান?",
+        3,
+        10
+      ],
+      [
+        "fruitveg",
+        "Fruit/vegetable servings/day?",
+        "প্রতিদিন ফল-সবজি কত serving?",
+        0,
+        10
+      ],
+      [
+        "stress",
+        "Perceived stress (0 low–10 high)?",
+        "Stress level (০ কম–১০ বেশি)?",
+        0,
+        10
+      ],
+      [
+        "smoking",
+        "Current smoking? 0=no, 1=yes",
+        "বর্তমানে ধূমপান? ০=না, ১=হ্যাঁ",
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "id": "metabolic",
+    "en": "Metabolic Health Assessment",
+    "bn": "মেটাবলিক স্বাস্থ্য মূল্যায়ন",
+    "qs": [
+      [
+        "waist",
+        "Waist-to-height ratio ×100",
+        "Waist-to-height ratio ×100",
+        30,
+        80
+      ],
+      [
+        "activity",
+        "Active days/week",
+        "সপ্তাহে active days",
+        0,
+        7
+      ],
+      [
+        "sleep",
+        "Sleep hours/night",
+        "ঘুম ঘণ্টা/রাত",
+        3,
+        10
+      ],
+      [
+        "glucose",
+        "Fasting glucose mg/dL (if known)",
+        "Fasting glucose mg/dL (জানা থাকলে)",
+        70,
+        250
+      ],
+      [
+        "family",
+        "Family history of diabetes? 0=no,1=yes",
+        "Family history diabetes? ০=না,১=হ্যাঁ",
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "id": "diabetes",
+    "en": "Diabetes Risk Lifestyle Assessment",
+    "bn": "ডায়াবেটিস রিস্ক লাইফস্টাইল মূল্যায়ন",
+    "qs": [
+      [
+        "age",
+        "Age",
+        "বয়স",
+        18,
+        90
+      ],
+      [
+        "bmi",
+        "BMI",
+        "BMI",
+        15,
+        50
+      ],
+      [
+        "activity",
+        "Active days/week",
+        "Active days/week",
+        0,
+        7
+      ],
+      [
+        "family",
+        "Family history? 0=no,1=yes",
+        "Family history? ০=না,১=হ্যাঁ",
+        0,
+        1
+      ],
+      [
+        "history",
+        "History of high glucose? 0=no,1=yes",
+        "High glucose history? ০=না,১=হ্যাঁ",
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "id": "cardio",
+    "en": "Cardiovascular Health Assessment",
+    "bn": "কার্ডিওভাসকুলার স্বাস্থ্য মূল্যায়ন",
+    "qs": [
+      [
+        "sbp",
+        "Systolic BP",
+        "Systolic BP",
+        80,
+        220
+      ],
+      [
+        "smoking",
+        "Smoking? 0=no,1=yes",
+        "Smoking? ০=না,১=হ্যাঁ",
+        0,
+        1
+      ],
+      [
+        "activity",
+        "Active days/week",
+        "Active days/week",
+        0,
+        7
+      ],
+      [
+        "sleep",
+        "Sleep hours",
+        "Sleep hours",
+        3,
+        10
+      ],
+      [
+        "nonhdl",
+        "Non-HDL cholesterol if known",
+        "Non-HDL cholesterol জানা থাকলে",
+        70,
+        300
+      ]
+    ]
+  },
+  {
+    "id": "kidney",
+    "en": "Kidney Health Assessment",
+    "bn": "কিডনি স্বাস্থ্য মূল্যায়ন",
+    "qs": [
+      [
+        "egfr",
+        "eGFR if known",
+        "eGFR জানা থাকলে",
+        5,
+        130
+      ],
+      [
+        "uacr",
+        "UACR mg/g if known",
+        "UACR mg/g জানা থাকলে",
+        0,
+        1000
+      ],
+      [
+        "diabetes",
+        "Diabetes? 0=no,1=yes",
+        "Diabetes? ০=না,১=হ্যাঁ",
+        0,
+        1
+      ],
+      [
+        "sbp",
+        "Systolic BP",
+        "Systolic BP",
+        80,
+        220
+      ],
+      [
+        "nsaid",
+        "Frequent NSAID painkiller use? 0=no,1=yes",
+        "Frequent NSAID use? ০=না,১=হ্যাঁ",
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "id": "gut",
+    "en": "Gut Health Assessment",
+    "bn": "গাট স্বাস্থ্য মূল্যায়ন",
+    "qs": [
+      [
+        "fiber",
+        "Fiber intake g/day",
+        "Fiber intake g/day",
+        0,
+        60
+      ],
+      [
+        "plants",
+        "Distinct plant foods/week",
+        "Distinct plant foods/week",
+        0,
+        60
+      ],
+      [
+        "bowel",
+        "Bowel comfort 0 poor–10 good",
+        "Bowel comfort ০ খারাপ–১০ ভালো",
+        0,
+        10
+      ],
+      [
+        "bloating",
+        "Bloating frequency 0 none–10 frequent",
+        "Bloating ০ নেই–১০ বেশি",
+        0,
+        10
+      ],
+      [
+        "fermented",
+        "Fermented-food servings/week",
+        "Fermented-food servings/week",
+        0,
+        20
+      ]
+    ]
+  },
+  {
+    "id": "sleep",
+    "en": "Sleep & Recovery Assessment",
+    "bn": "স্লিপ ও রিকভারি মূল্যায়ন",
+    "qs": [
+      [
+        "sleep",
+        "Sleep hours/night",
+        "Sleep hours/night",
+        3,
+        12
+      ],
+      [
+        "quality",
+        "Sleep quality 0 poor–10 excellent",
+        "Sleep quality ০ খারাপ–১০ চমৎকার",
+        0,
+        10
+      ],
+      [
+        "energy",
+        "Daytime energy 0 low–10 high",
+        "Daytime energy ০ কম–১০ বেশি",
+        0,
+        10
+      ],
+      [
+        "screen",
+        "Screen use before bed hours",
+        "Bed-এর আগে screen hours",
+        0,
+        5
+      ],
+      [
+        "snore",
+        "Loud snoring? 0=no,1=yes",
+        "Loud snoring? ০=না,১=হ্যাঁ",
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "id": "hydration",
+    "en": "Hydration Assessment",
+    "bn": "হাইড্রেশন মূল্যায়ন",
+    "qs": [
+      [
+        "water",
+        "Water intake mL/day",
+        "Water intake mL/day",
+        0,
+        6000
+      ],
+      [
+        "urine",
+        "Urine color 1 pale–8 dark",
+        "Urine color ১ pale–৮ dark",
+        1,
+        8
+      ],
+      [
+        "heat",
+        "Heavy sweating/heat exposure 0=no,1=yes",
+        "Heavy sweating/heat exposure ০=না,১=হ্যাঁ",
+        0,
+        1
+      ],
+      [
+        "thirst",
+        "Frequent thirst 0=no,1=yes",
+        "Frequent thirst ০=না,১=হ্যাঁ",
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "id": "muscle",
+    "en": "Muscle & Healthy Ageing Assessment",
+    "bn": "মাসল ও হেলদি এজিং মূল্যায়ন",
+    "qs": [
+      [
+        "age",
+        "Age",
+        "বয়স",
+        40,
+        95
+      ],
+      [
+        "protein",
+        "Protein g/day",
+        "Protein g/day",
+        0,
+        200
+      ],
+      [
+        "weight",
+        "Body weight kg",
+        "Body weight kg",
+        30,
+        180
+      ],
+      [
+        "strength",
+        "Strength-training days/week",
+        "Strength training days/week",
+        0,
+        7
+      ],
+      [
+        "loss",
+        "Unintentional weight loss %",
+        "Unintentional weight loss %",
+        0,
+        20
+      ]
+    ]
+  },
+  {
+    "id": "women",
+    "en": "Women’s Health Lifestyle Assessment",
+    "bn": "নারী স্বাস্থ্য লাইফস্টাইল মূল্যায়ন",
+    "qs": [
+      [
+        "cycle",
+        "Cycle regularity 0 irregular–10 regular",
+        "Cycle regularity ০ irregular–১০ regular",
+        0,
+        10
+      ],
+      [
+        "sleep",
+        "Sleep hours",
+        "Sleep hours",
+        3,
+        10
+      ],
+      [
+        "activity",
+        "Active days/week",
+        "Active days/week",
+        0,
+        7
+      ],
+      [
+        "iron",
+        "Iron-rich foods days/week",
+        "Iron-rich foods days/week",
+        0,
+        7
+      ],
+      [
+        "symptoms",
+        "Symptom burden 0 none–10 high",
+        "Symptom burden ০ নেই–১০ বেশি",
+        0,
+        10
+      ]
+    ]
+  },
+  {
+    "id": "nutrition",
+    "en": "Nutrition Quality Assessment",
+    "bn": "পুষ্টির মান মূল্যায়ন",
+    "qs": [
+      [
+        "fruitveg",
+        "Fruit/veg servings/day",
+        "Fruit/veg servings/day",
+        0,
+        10
+      ],
+      [
+        "protein",
+        "Protein-rich meals/day",
+        "Protein-rich meals/day",
+        0,
+        5
+      ],
+      [
+        "whole",
+        "Whole-grain/legume servings/day",
+        "Whole grain/legume servings/day",
+        0,
+        8
+      ],
+      [
+        "ultra",
+        "Ultra-processed foods/day",
+        "Ultra-processed foods/day",
+        0,
+        8
+      ],
+      [
+        "sugary",
+        "Sugary drinks/week",
+        "Sugary drinks/week",
+        0,
+        21
+      ]
+    ]
+  },
+  {
+    "id": "supplement",
+    "en": "Supplement Use Assessment",
+    "bn": "সাপ্লিমেন্ট ব্যবহারের মূল্যায়ন",
+    "qs": [
+      [
+        "count",
+        "Number of supplements used",
+        "Number of supplements",
+        0,
+        15
+      ],
+      [
+        "reason",
+        "How clear is your reason for each? 0 low–10 high",
+        "Reason clarity ০ কম–১০ বেশি",
+        0,
+        10
+      ],
+      [
+        "interaction",
+        "Checked medicine interactions? 0=no,1=yes",
+        "Medicine interaction check? ০=না,১=হ্যাঁ",
+        0,
+        1
+      ],
+      [
+        "dose",
+        "Know each dose? 0=no,1=yes",
+        "Dose জানেন? ০=না,১=হ্যাঁ",
+        0,
+        1
+      ],
+      [
+        "review",
+        "Reviewed by professional? 0=no,1=yes",
+        "Professional review? ০=না,১=হ্যাঁ",
+        0,
+        1
+      ]
+    ]
+  }
+]

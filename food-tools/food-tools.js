@@ -1,0 +1,4 @@
+
+const INDEX="https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food-search-index.json";let foods=[];const $=s=>document.querySelector(s);
+fetch(INDEX).then(r=>r.json()).then(x=>{foods=x;draw("")}).catch(()=>{$("#results").innerHTML="<p>Food index could not be loaded. Open the full database instead.</p>"});
+function draw(q){q=q.trim().toLowerCase();const arr=foods.filter(f=>!q||`${f.name_en} ${f.name_bn} ${f.roman} ${f.category}`.toLowerCase().includes(q)).slice(0,18);$("#results").innerHTML=arr.map(f=>`<div class="card"><h3>${f.name_en}</h3><p>${f.name_bn}<br><small>${f.category}</small></p><div class="chips"><button class="btn" onclick="setFood('a','${f.url}')">Compare A</button><button class="btn" onclick="setFood('b','${f.url}')">Compare B</button><a class="btn" href="${f.url}" target="_blank">Open</a></div></div>`).join("")}$("#q").oninput=e=>draw(e.target.value);window.setFood=(id,url)=>document.getElementById(id).src=url;

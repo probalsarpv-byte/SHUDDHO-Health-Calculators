@@ -50,6 +50,26 @@ function render(){
 }
 function draw(query){
   const q=query.trim().toLowerCase(), host=$("#main"); let html="";
+  if(!q){
+    const modules=[
+      ["assessments/","Health Assessments","স্বাস্থ্য মূল্যায়ন","Personalized result + strengths + priority areas + suggestions"],
+      ["trackers/","Health Trackers","হেলথ ট্র্যাকার","Weight, waist, BP, glucose, sleep, water, protein, steps and more"],
+      ["labs/","Lab Interpreter","ল্যাব রিপোর্ট ব্যাখ্যা","Glucose, HbA1c, lipids, kidney, liver, thyroid and CBC context"],
+      ["food-tools/","Food & Nutrient Tools","ফুড ও নিউট্রিয়েন্ট টুলস","Connected to Bangladesh Food Composition database"],
+      ["medication-nutrition/","Medication–Nutrition","মেডিসিন–নিউট্রিশন","Connected to MediNutrition + safety checklist"],
+      ["dashboard/","Health Dashboard","হেলথ ড্যাশবোর্ড","Combined local summary of assessments, trackers and profile"],
+      ["planner/","Goal Planner","গোল প্ল্যানার","Weekly actions for weight, metabolic health, muscle and healthy ageing"],
+      ["challenges/","Habit Challenges","হ্যাবিট চ্যালেঞ্জ","Hydration, fiber, plant diversity, sleep and movement challenges"],
+      ["reports/","Report Generator","রিপোর্ট জেনারেটর","Printable / Save-as-PDF local health summary"],
+      ["symptoms/","Symptom & Lifestyle Checker","সিম্পটম ও লাইফস্টাইল চেকার","Non-diagnostic pattern checker"],
+      ["learn/","Education & Pathways","এডুকেশন ও পাথওয়ে","What to check next and connected tool pathways"],
+      ["professional/","Professional Mode","প্রফেশনাল মোড","Fast workflow for health professionals"],
+      ["profile/","Local Health Profile","লোকাল হেলথ প্রোফাইল","Personalize goals, language, units and priorities without an account"],
+      ["privacy/","Privacy Center","প্রাইভেসি সেন্টার","Control local data, backups, cloud copies and deletion"],
+      ["account/","Account & Auto Sync","অ্যাকাউন্ট ও অটো সিঙ্ক","Optional Google/email login with cross-device sync"]
+    ];
+    html+=`<section class="section reveal"><div class="section-head"><div><h2>${state.lang==="bn"?"Health Platform":"Health Platform"}</h2><p>${state.lang==="bn"?"Calculate → Assess → Track → Interpret → Plan → Learn → Report":"Calculate → Assess → Track → Interpret → Plan → Learn → Report"}</p></div></div><div class="grid">${modules.map(m=>`<a class="card" href="./${m[0]}"><span class="tag">SHUDDHO</span><h3>${state.lang==="bn"?m[2]:m[1]}</h3><p>${m[3]}</p><span class="open">${state.lang==="bn"?"খুলুন →":"Open →"}</span></a>`).join("")}</div></section>`;
+  }
   for(const [gid,g] of Object.entries(state.data.groups)){
     if(gid==="future") continue;
     const items=state.data.calculators.filter(x=>x.group===gid&&x.status==="active"&&(!q||`${x.name_en} ${x.name_bn} ${x.summary_en} ${x.summary_bn}`.toLowerCase().includes(q)));

@@ -1,0 +1,24 @@
+<!doctype html><html><head><title>Personal Health Profile | SHUDDHO</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><link rel="stylesheet" href="../platform-modules.css?v=5.1"><script>(function(){try{var t=localStorage.getItem("shuddhoCalcTheme");if(t)document.documentElement.dataset.theme=t}catch(e){}})()</script></head><body><header class="top"><div class="wrap row"><a class="brand" href="../">SHUDDHO Health Platform</a><nav class="nav"><a class="btn" href="../dashboard/">Dashboard</a><a class="btn" href="../assessments/">Assess</a><a class="btn" href="../trackers/">Track</a><a class="btn" href="../profile/">Profile</a><a class="btn" href="../privacy/">Privacy</a><a class="btn" href="../account/">Account</a></nav></div></header>
+<section class="hero"><div class="wrap"><span class="kicker">LOCAL-ONLY PROFILE</span><h1>Personal Health Profile</h1><p>আপনার preference, health goal এবং priority এই browser/device-এই থাকবে। Guest mode-এ কোনো login দরকার নেই। চাইলে Account থেকে optional sign-in করে cross-device sync চালু করা যাবে। Profile অনুযায়ী dashboard ও recommended tools personalize হবে।</p></div></section>
+<main class="wrap">
+<section class="card"><div class="notice"><strong>Privacy:</strong> This profile is stored only in this browser's localStorage. Clearing browser data can remove it. You can export a backup from Privacy Center.</div></section>
+<section class="card"><form id="profileForm" class="grid2">
+<div class="field"><label>Display name / নাম</label><input name="display_name" maxlength="60" placeholder="Optional"></div>
+<div class="field"><label>Age / বয়স</label><input name="age" type="number" min="13" max="120"></div>
+<div class="field"><label>Sex / লিঙ্গ</label><select name="sex"><option value="">Prefer not to say</option><option value="female">Female</option><option value="male">Male</option><option value="other">Other</option></select></div>
+<div class="field"><label>Country / দেশ</label><select name="country"><option>Bangladesh</option><option>United States</option><option>United Kingdom</option><option>India</option><option>Canada</option><option>Australia</option><option>Other</option></select></div>
+<div class="field"><label>Language / ভাষা</label><select name="language"><option value="bn">বাংলা</option><option value="en">English</option></select></div>
+<div class="field"><label>Preferred units</label><select name="units"><option value="metric">Metric (kg, cm)</option><option value="imperial">Imperial (lb, ft/in)</option></select></div>
+<div class="field"><label>Height / উচ্চতা (cm)</label><input name="height_cm" type="number" step="any" min="60" max="250"></div>
+<div class="field"><label>Weight / ওজন (kg)</label><input name="weight_kg" type="number" step="any" min="15" max="400"></div>
+<div class="field"><label>Main health goal</label><select name="goal"><option>General wellness</option><option>Weight management</option><option>Metabolic health</option><option>Muscle & strength</option><option>Healthy ageing</option><option>Pregnancy nutrition</option><option>Performance & fitness</option></select></div>
+<div class="field"><label>Priority domain</label><select name="priority"><option>General health</option><option>Metabolic health</option><option>Heart & cardiovascular</option><option>Kidney health</option><option>Gut health</option><option>Sleep & recovery</option><option>Muscle health</option><option>Women’s health</option></select></div>
+<div class="field"><label>Diet pattern</label><select name="diet"><option>Mixed</option><option>Vegetarian</option><option>Vegan</option><option>Pescatarian</option><option>Other</option></select></div>
+<div class="field"><label>Activity days/week</label><input name="activity_days" type="number" min="0" max="7"></div>
+<div class="field"><label>Sleep hours/night</label><input name="sleep_hours" type="number" step="any" min="2" max="14"></div>
+<div class="field"><label>Homepage preference</label><select name="home_mode"><option value="personalized">Personalized recommendations</option><option value="all-tools">Show all tools first</option></select></div>
+<button class="primary" type="submit">Save profile locally</button>
+</form><div id="saved" style="margin-top:16px"></div></section>
+<section class="card"><h2>Your personalized tools</h2><div class="grid" id="recs"></div></section>
+</main>
+<script src="../local-data.js?v=5.1"></script><script src="../personalization/personalization.js?v=5.1"></script><script src="./profile.js?v=5.1"></script><script src="../sync/bootstrap.js?v=5.2"></script></body></html>

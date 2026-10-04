@@ -7,9 +7,25 @@ on:
     paths:
       - "data/calculators.json"
       - "calculator-engine.js"
+      - "interpretation-engine.js"
       - "calculator-ui.js"
       - "calculator-page.css"
       - "scripts/generate-seo.js"
+      - "assessments/**"
+      - "trackers/**"
+      - "labs/**"
+      - "food-tools/**"
+      - "medication-nutrition/**"
+      - "dashboard/**"
+      - "profile/**"
+      - "privacy/**"
+      - "onboarding/**"
+      - "personalization/**"
+      - "local-data.js"
+      - "account/**"
+      - "sync/**"
+      - "firebase/**"
+      - "platform-modules.css"
       - ".github/workflows/build-seo-pages.yml"
 
 permissions:
@@ -34,12 +50,26 @@ jobs:
       - name: Validate generated files
         run: |
           test -f calculator/bmi/index.html
+          test -f calculator/tdee/index.html
           test -f sitemap.xml
           test -f robots.txt
           test -f calculator-manifest.json
+          test -f assessments/index.html
+          test -f trackers/index.html
+          test -f labs/index.html
+          test -f food-tools/index.html
+          test -f medication-nutrition/index.html
+          test -f profile/index.html
+          test -f privacy/index.html
+          test -f account/index.html
+          test -f sync/bootstrap.js
+          test -f sync/sync-engine.js
+          test -f firebase/firebase-config.js
+          test -f firebase/firestore.rules
+          grep -q "interpretation-engine.js" calculator/bmi/index.html
           COUNT=$(find calculator -mindepth 1 -maxdepth 1 -type d | wc -l)
           echo "Generated calculator folders: $COUNT"
-          test "$COUNT" -ge 60
+          test "$COUNT" -ge 65
 
       - name: Commit generated pages
         run: |
@@ -50,5 +80,5 @@ jobs:
             echo "No generated changes."
             exit 0
           fi
-          git commit -m "Auto-generate calculator SEO pages"
+          git commit -m "Generate premium calculator pages with interpretation"
           git push

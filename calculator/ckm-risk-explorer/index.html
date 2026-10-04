@@ -2,33 +2,77 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="color-scheme" content="dark light"><meta name="theme-color" content="#07111f">
+<meta name="theme-color" content="#07131b"><meta name="color-scheme" content="dark light">
 <title>SHUDDHO Cardiometabolic Risk Explorer | SHUDDHO কার্ডিওমেটাবলিক রিস্ক এক্সপ্লোরার | SHUDDHO Health Calculators</title>
-<meta name="description" content="Original non-diagnostic cardiometabolic risk-factor index using age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol and eGFR. It does not reproduce AHA PREVENT. Age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol ও eGFR ব্যবহার করে original non-diagnostic risk-factor index। এটি">
-<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
-<link rel="canonical" href="https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators/calculator/ckm-risk-explorer/">
-<link rel="stylesheet" href="../../calculator-page.css?v=3.0.0">
+<meta name="description" content="Original non-diagnostic cardiometabolic risk-factor index using age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol and eGFR. It does not reproduce AHA PREVENT. Age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol ও eGFR ব্যবহার করে original non-diagnostic risk-factor index। এটি"><meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators/calculator/ckm-risk-explorer/"><link rel="stylesheet" href="../../calculator-page.css?v=4.0.0">
 <script>(function(){try{var t=localStorage.getItem("shuddhoCalcTheme");if(t)document.documentElement.dataset.theme=t}catch(e){}})()</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"SHUDDHO Cardiometabolic Risk Explorer","alternateName":"SHUDDHO কার্ডিওমেটাবলিক রিস্ক এক্সপ্লোরার","url":"https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators/calculator/ckm-risk-explorer/","applicationCategory":"HealthApplication","operatingSystem":"Any","browserRequirements":"JavaScript enabled","description":"Original non-diagnostic cardiometabolic risk-factor index using age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol and eGFR. It does not reproduce AHA PREVENT. Age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol ও eGFR ব্যবহার করে original non-diagnostic risk-factor index। এটি","isAccessibleForFree":true},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Health Calculators","item":"https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators/"},{"@type":"ListItem","position":2,"name":"Cardiometabolic & CKM","item":"https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators/#ckm"},{"@type":"ListItem","position":3,"name":"SHUDDHO Cardiometabolic Risk Explorer","item":"https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators/calculator/ckm-risk-explorer/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"SHUDDHO Cardiometabolic Risk Explorer","alternateName":"SHUDDHO কার্ডিওমেটাবলিক রিস্ক এক্সপ্লোরার","url":"https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators/calculator/ckm-risk-explorer/","applicationCategory":"HealthApplication","operatingSystem":"Any","browserRequirements":"JavaScript enabled","description":"Original non-diagnostic cardiometabolic risk-factor index using age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol and eGFR. It does not reproduce AHA PREVENT. Age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol ও eGFR ব্যবহার করে original non-diagnostic risk-factor index। এটি","isAccessibleForFree":true},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Health Calculators","item":"https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators/"},{"@type":"ListItem","position":2,"name":"Cardiometabolic & CKM","item":"https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators/#ckm"},{"@type":"ListItem","position":3,"name":"SHUDDHO Cardiometabolic Risk Explorer","item":"https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators/calculator/ckm-risk-explorer/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does the SHUDDHO Cardiometabolic Risk Explorer result mean?","acceptedAnswer":{"@type":"Answer","text":"The result is an estimate based on Original weighted risk-factor index (0–100), not an event-probability model. The page provides contextual interpretation, but it is not a diagnosis."}},{"@type":"Question","name":"Is SHUDDHO Cardiometabolic Risk Explorer accurate?","acceptedAnswer":{"@type":"Answer","text":"Accuracy depends on the quality of the inputs and the limitations of the underlying equation. Use trends and clinical context when appropriate."}},{"@type":"Question","name":"Can I use this calculator in Bangla?","acceptedAnswer":{"@type":"Answer","text":"Yes. SHUDDHO Health Calculators supports Bangla and English on the same page."}}]}]}</script>
 </head>
 <body>
 <header class="top"><div class="wrap row"><a href="https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators/">SHUDDHO Health Calculators</a><div class="actions"><button class="btn" id="langBtn">বাংলা</button><button class="btn" id="themeBtn">🌙</button></div></div></header>
 <section class="hero"><canvas id="mini3d" aria-hidden="true"></canvas><div class="wrap inner"><div class="crumb"><a href="https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators/">Home</a> › Cardiometabolic &amp; CKM › SHUDDHO Cardiometabolic Risk Explorer</div><h1>SHUDDHO Cardiometabolic Risk Explorer</h1><h2>SHUDDHO কার্ডিওমেটাবলিক রিস্ক এক্সপ্লোরার</h2><p id="summary">Original non-diagnostic cardiometabolic risk-factor index using age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol and eGFR. It does not reproduce AHA PREVENT.</p></div></section>
 <main class="wrap layout">
-  <article>
-    <section class="card"><h3>Calculator / ক্যালকুলেটর</h3><form id="calcForm" class="fields"></form></section>
-    <section class="card"><h3>Result / ফলাফল</h3><div class="result" id="result"><span class="muted">Enter values and calculate.</span></div><div class="share-row"><button class="btn" id="copyBtn">Copy result</button><button class="btn" id="shareBtn">Share</button></div></section>
+  <section class="leftcol">
+    <section class="card calculator-card"><h3 id="calcTitle">Calculator / ক্যালকুলেটর</h3><form id="calcForm" class="fields"></form></section>
+
+    <section class="card"><h3 id="detailsTitle">Calculator details / ক্যালকুলেটর ডিটেইলস</h3>
+      <div class="details-grid">
+        <div class="detailbox"><b>Category</b><span>Cardiometabolic &amp; CKM<br><small>কার্ডিওমেটাবলিক ও CKM</small></span></div>
+        <div class="detailbox"><b>Formula</b><span>Original weighted risk-factor index (0–100), not an event-probability model</span></div>
+        <div class="detailbox"><b>Privacy</b><span>Runs in your browser</span></div>
+      </div>
+    </section>
+
     <section class="card"><h3>How it works / কীভাবে কাজ করে</h3><p>Original non-diagnostic cardiometabolic risk-factor index using age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol and eGFR. It does not reproduce AHA PREVENT.</p><p>Age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol ও eGFR ব্যবহার করে original non-diagnostic risk-factor index। এটি AHA PREVENT কপি করে না।</p><p><strong>Formula:</strong> <code>Original weighted risk-factor index (0–100), not an event-probability model</code></p></section>
-    <section class="card"><h3>Interpretation & limitations</h3><p>Results are estimates. Interpret them together with age, symptoms, medical history, medications, laboratory context and the limitations of the underlying equation or score.</p><p>ফলাফল একটি estimate। বয়স, উপসর্গ, রোগের ইতিহাস, ওষুধ, ল্যাব রিপোর্ট এবং formula/score-এর সীমাবদ্ধতার সাথে মিলিয়ে ব্যাখ্যা করতে হবে।</p><div class="notice">Educational/reference use only. Do not use this page alone to diagnose disease, change medication, or make urgent treatment decisions.</div></section>
+
+    <section class="card"><h3>Interpretation & limitations</h3>
+      <div class="insight-grid">
+        <div class="insight"><strong>Result ≠ diagnosis</strong><p>The calculator gives a formula-based estimate. Symptoms, history, medicines, age, ethnicity and laboratory context can change meaning.</p></div>
+        <div class="insight"><strong>Trend matters</strong><p>Repeated measurements made the same way are often more useful than one isolated number.</p></div>
+        <div class="insight"><strong>বাংলা ব্যাখ্যা</strong><p>Result-এর পাশে status ও health meaning দেখানো হবে, যাতে শুধু সংখ্যা নয়—context-ও বোঝা যায়।</p></div>
+        <div class="insight"><strong>Professional context</strong><p>High-risk, abnormal or symptomatic results should be interpreted by an appropriate health professional.</p></div>
+      </div>
+      <div class="notice" style="margin-top:14px">Educational/reference use only. Do not use this page alone to diagnose disease, stop/change medicine, or make urgent treatment decisions.</div>
+    </section>
+
+    <section class="card"><h3>FAQ</h3>
+      <h4>What does the SHUDDHO Cardiometabolic Risk Explorer result mean?</h4><p>The result is an estimate based on Original weighted risk-factor index (0–100), not an event-probability model. The page provides contextual interpretation, but it is not a diagnosis.</p>
+      <h4>Is SHUDDHO Cardiometabolic Risk Explorer accurate?</h4><p>Accuracy depends on the quality of the inputs and the limitations of the underlying equation. Use trends and clinical context when appropriate.</p>
+      <h4>Can I use this calculator in Bangla?</h4><p>Yes. SHUDDHO Health Calculators supports Bangla and English on the same page.</p>
+    </section>
+
+    <section class="card"><h3>Embed in Blogger / iframe</h3><p class="muted">This calculator has an iframe-friendly mode. Add <code>?embed=1</code> to hide the page header and use the compact calculator layout.</p>
+      <div class="embed-tools"><textarea id="embedCode" class="embed-code" readonly></textarea><button id="copyEmbed" class="btn">Copy iframe</button></div>
+    </section>
+
     <section class="card"><h3>References</h3><ul><li>Cardiovascular-kidney-metabolic health literature</li><li>General cardiovascular risk-factor literature</li></ul></section>
-  </article>
-  <aside>
-    <section class="card"><h3>Calculator details</h3><p><strong>Category:</strong><br>Cardiometabolic &amp; CKM<br>কার্ডিওমেটাবলিক ও CKM</p><p><strong>Mode:</strong><br>Bangla + English</p><p><strong>Privacy:</strong><br>Calculation runs in your browser.</p></section>
+  </section>
+
+  <aside class="rightcol">
+    <section class="card result-card" id="resultCard">
+      <div class="result-head"><small>YOUR RESULT / আপনার ফলাফল</small></div>
+      <div class="result-wrap">
+        <div class="result-shell">
+          <div class="gauge" id="gauge" style="--score:65;--tone:var(--info)"><div class="gtext"><b id="gaugeText">Result</b><small>context score</small></div></div>
+          <div class="result-value"><div class="big" id="resultPrimary">—</div><div class="unit" id="resultUnit">Enter values and calculate</div><pre id="resultAll" class="muted"></pre></div>
+        </div>
+        <div class="status">
+          <span class="status-chip status-info" id="statusChip">Waiting for result</span>
+          <h4 id="statusTitle">What this means</h4>
+          <p id="statusDetail">Calculate to see whether the result is generally favorable, needs attention, or requires clinical context.</p>
+          <p class="action" id="statusAction"></p>
+        </div>
+        <div class="share-row"><button class="btn" id="copyBtn">Copy result</button><button class="btn" id="shareBtn">Share</button></div>
+      </div>
+    </section>
+
     <section class="card backlinks"><h3>Related calculators</h3><a href="https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators/calculator/metabolic-flexibility-score/">Metabolic Flexibility Lifestyle Score<br><small>মেটাবলিক ফ্লেক্সিবিলিটি লাইফস্টাইল স্কোর</small></a></section>
   </aside>
 </main>
 <script>window.CALCULATOR_META={"id":"ckm-risk-explorer","group":"ckm","status":"active","name_en":"SHUDDHO Cardiometabolic Risk Explorer","name_bn":"SHUDDHO কার্ডিওমেটাবলিক রিস্ক এক্সপ্লোরার","summary_en":"Original non-diagnostic cardiometabolic risk-factor index using age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol and eGFR. It does not reproduce AHA PREVENT.","summary_bn":"Age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol ও eGFR ব্যবহার করে original non-diagnostic risk-factor index। এটি AHA PREVENT কপি করে না।","formula":"Original weighted risk-factor index (0–100), not an event-probability model","inputs":["age","sbp","smoker","diabetes","bmi","non_hdl","egfr"],"refs":["Cardiovascular-kidney-metabolic health literature","General cardiovascular risk-factor literature"]};</script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
-<script src="../../calculator-engine.js?v=3.0.0"></script>
-<script src="../../calculator-ui.js?v=3.0.0"></script>
+<script src="../../calculator-engine.js?v=4.0.0"></script>
+<script src="../../interpretation-engine.js?v=4.0.0"></script>
+<script src="../../calculator-ui.js?v=4.0.0"></script>
 </body></html>

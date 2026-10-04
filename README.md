@@ -29,3 +29,54 @@ Original SHUDDHO modules (not copies of proprietary/official calculators):
 - Metabolic Flexibility Lifestyle Score
 
 The PREVENT/KFRE/WHO-growth concepts were not copied. Where official models require protected coefficients, licensed code or official LMS tables, V2 uses original educational factor explorers or user-supplied reference mathematics instead.
+
+## V5 Health Platform
+Beyond calculators, V5 adds:
+- 12 original bilingual health assessments with result explanation and suggestions
+- health trackers with localStorage trend graph
+- lab report interpreter
+- Food & Nutrient Tools connected to the Bangladesh Food Composition database
+- Medication–Nutrition Awareness connected to MediNutrition
+- local health dashboard
+- personal health profile
+- goal planner
+- healthy habit challenges
+- symptom & lifestyle checker
+- reminders
+- education / decision pathways
+- printable report generator
+- professional mode
+
+Architecture remains static GitHub Pages. Personal entries stay in the user's browser unless the user exports/prints them.
+
+## V5.1 Local-Only Final Structure
+V5.1 uses a local-first privacy model:
+- no SHUDDHO login required
+- no profile/assessment/tracker cloud sync
+- profile personalization is stored in browser localStorage
+- onboarding, health profile, dashboard recommendations and privacy center
+- export/import JSON backup
+- one-click deletion of all SHUDDHO local data
+- other public databases can be opened/embedded, but local profile data is not intentionally passed to them
+
+Core flow:
+Profile → Calculate → Assess → Track → Interpret → Food/Medication Context → Plan → Learn → Report → Follow-up
+
+## V5.2 Hybrid Sync — preserves V5 + V5.1
+Nothing from V5 or V5.1 is removed.
+
+V5.2 adds an optional account layer on top of local-first storage:
+- guest/local-only mode remains the default fallback
+- Google Sign-In
+- Email/password sign-in and account creation
+- password reset
+- local-first auto sync to Firestore when signed in
+- sync on login, reconnect, tab return and approximately every 30 seconds while active
+- latest-updated copy wins per SHUDDHO local data key
+- separate local-data and cloud-data deletion controls
+- account + cloud deletion control
+- Firebase security rules restricting each user to their own path
+- Firebase config placeholders; the site safely stays local-only until configured
+- no server/admin secret is required in the GitHub repository
+
+See `firebase/SETUP.md`.

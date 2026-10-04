@@ -1,0 +1,16 @@
+<!doctype html><html><head><title>Privacy Center | SHUDDHO</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><link rel="stylesheet" href="../platform-modules.css?v=5.2"><script>(function(){try{var t=localStorage.getItem("shuddhoCalcTheme");if(t)document.documentElement.dataset.theme=t}catch(e){}})()</script></head><body><header class="top"><div class="wrap row"><a class="brand" href="../">SHUDDHO Health Platform</a><nav class="nav"><a class="btn" href="../dashboard/">Dashboard</a><a class="btn" href="../profile/">Profile</a><a class="btn" href="../account/">Account</a><a class="btn" href="../privacy/">Privacy</a></nav></div></header>
+<section class="hero"><div class="wrap"><span class="kicker">LOCAL-FIRST + OPTIONAL SYNC</span><h1>Privacy Center</h1><p>Guest mode-এ data শুধু browser/device-এ থাকে। আপনি sign in করলে SHUDDHO data আপনার private Firebase account path-এ optionalভাবে sync হবে।</p></div></section>
+<main class="wrap">
+<div class="grid2">
+<section class="card"><h2>Local data status</h2><div id="status"></div></section>
+<section class="card"><h2>Cloud sync status</h2><div id="cloud"><p class="muted">Checking…</p></div><p><a class="btn" href="../account/">Account & Sync</a></p></section>
+</div>
+<section class="card"><h2>Backup & restore</h2><div class="chips"><button class="primary" id="export">Export local backup</button><label class="btn">Import backup<input id="import" type="file" accept=".json,application/json" hidden></label></div><p class="muted">Backup JSON contains SHUDDHO local health data from this browser. Keep it private.</p></section>
+<div class="grid2">
+<section class="card"><h2>Delete local data only</h2><p>Removes SHUDDHO profile, assessments, trackers, reminders and preferences from this browser. If cloud sync remains enabled, deletion will sync as deletions.</p><button class="primary danger" id="clearLocal">Delete local SHUDDHO data</button></section>
+<section class="card"><h2>Delete cloud copy</h2><p>When signed in, remove synced SHUDDHO data from Firestore while keeping your authentication account.</p><button class="primary danger" id="clearCloud">Delete cloud health data</button></section>
+</div>
+<section class="card"><h2>Delete account + cloud data</h2><p>This attempts to delete synced health data and your Firebase authentication account. Firebase may require a recent sign-in before account deletion.</p><button class="primary danger" id="deleteAccount">Delete account and cloud data</button><div id="msg"></div></section>
+<section class="card"><h2>Privacy model</h2><ul><li>Login is optional.</li><li>All tools remain usable in guest/local-only mode.</li><li>Local saves happen before cloud sync.</li><li>Cloud sync only runs for authenticated users when Firebase is configured.</li><li>Public Food Composition and MediNutrition pages are separate public resources; SHUDDHO does not intentionally append your private profile to their URLs.</li></ul></section>
+</main>
+<script src="../local-data.js?v=5.2"></script><script src="../sync/bootstrap.js?v=5.2"></script><script src="./privacy.js?v=5.2"></script></body></html>

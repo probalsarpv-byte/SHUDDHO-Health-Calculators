@@ -1,9 +1,10 @@
 {
-  "name": "SHUDDHO Health Calculators",
-  "short_name": "SHUDDHO Calc",
+  "name": "SHUDDHO Health Platform",
+  "short_name": "SHUDDHO",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#06111a",
   "theme_color": "#07111f",
-  "icons": []
+  "icons": [],
+  "description": "Local-first bilingual health platform with calculators, assessments, trackers, personalized profiles and optional account-based cross-device sync."
 }

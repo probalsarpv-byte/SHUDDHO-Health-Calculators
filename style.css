@@ -6,7 +6,7 @@
   --shadow:0 24px 70px rgba(0,0,0,.34);--blur:blur(18px);
 }
 :root[data-theme="light"]{
-  --bg:#edf5f3;--bg2:#f9fcfb;--card:rgba(255,255,255,.76);--card-solid:#fff;
+  --bg:#e7f7f2;--bg2:#eef0ff;--card:rgba(255,255,255,.77);--card-solid:#ffffff;
   --ink:#10231d;--muted:#60736d;--line:rgba(22,79,61,.14);
   --brand:#087b58;--brand2:#2563eb;--accent:#7c3aed;--warn:#9a6800;
   --shadow:0 24px 70px rgba(14,60,44,.12);
@@ -14,9 +14,10 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:
-radial-gradient(circle at 10% 0%,rgba(57,214,160,.10),transparent 28%),
-radial-gradient(circle at 95% 12%,rgba(92,168,255,.12),transparent 26%),
-var(--bg);color:var(--ink);font-family:Inter,Arial,"Noto Sans Bengali",sans-serif;line-height:1.65;min-height:100vh}
+radial-gradient(circle at 8% 2%,color-mix(in srgb,var(--brand) 18%,transparent),transparent 28%),
+radial-gradient(circle at 94% 10%,color-mix(in srgb,var(--brand2) 20%,transparent),transparent 29%),
+radial-gradient(circle at 70% 85%,color-mix(in srgb,var(--accent) 12%,transparent),transparent 31%),
+linear-gradient(135deg,var(--bg),var(--bg2));color:var(--ink);font-family:Inter,Arial,"Noto Sans Bengali",sans-serif;line-height:1.65;min-height:100vh}
 button,input,select{font:inherit}
 a{color:var(--brand)}
 .skip-link{position:fixed;left:12px;top:-80px;background:var(--card-solid);padding:10px 14px;border-radius:10px;z-index:9999}.skip-link:focus{top:12px}
