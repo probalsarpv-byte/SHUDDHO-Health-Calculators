@@ -1,0 +1,1221 @@
+{
+  "groups": {
+    "body": {
+      "en": "Body Composition & Weight",
+      "bn": "শরীরের গঠন ও ওজন"
+    },
+    "energy": {
+      "en": "Calories, Energy & Nutrition",
+      "bn": "ক্যালরি, এনার্জি ও পুষ্টি"
+    },
+    "metabolic": {
+      "en": "Metabolic Health & Diabetes",
+      "bn": "মেটাবলিক স্বাস্থ্য ও ডায়াবেটিস"
+    },
+    "kidney": {
+      "en": "Kidney Health",
+      "bn": "কিডনি স্বাস্থ্য"
+    },
+    "lab": {
+      "en": "Lab & Electrolytes",
+      "bn": "ল্যাব ও ইলেক্ট্রোলাইট"
+    },
+    "cardio": {
+      "en": "Heart & Circulation",
+      "bn": "হৃদ্‌যন্ত্র ও রক্তসঞ্চালন"
+    },
+    "fitness": {
+      "en": "Fitness & Exercise",
+      "bn": "ফিটনেস ও ব্যায়াম"
+    },
+    "women": {
+      "en": "Women’s Health & Pregnancy",
+      "bn": "নারী স্বাস্থ্য ও প্রেগন্যান্সি"
+    },
+    "clinical": {
+      "en": "Clinical Nutrition & Liver",
+      "bn": "ক্লিনিক্যাল নিউট্রিশন ও লিভার"
+    },
+    "child": {
+      "en": "Child Health",
+      "bn": "শিশু স্বাস্থ্য"
+    },
+    "ageing": {
+      "en": "Healthy Ageing",
+      "bn": "হেলদি এজিং"
+    },
+    "future": {
+      "en": "Future Validated Modules",
+      "bn": "ভবিষ্যৎ ভ্যালিডেটেড মডিউল"
+    },
+    "ckm": {
+      "en": "Cardiometabolic & CKM",
+      "bn": "কার্ডিওমেটাবলিক ও CKM"
+    },
+    "personalized": {
+      "en": "Personalized Nutrition",
+      "bn": "পার্সোনালাইজড নিউট্রিশন"
+    },
+    "microbiome": {
+      "en": "Gut & Microbiome",
+      "bn": "গাট ও মাইক্রোবায়োম"
+    },
+    "healthy-ageing": {
+      "en": "Longevity & Muscle Health",
+      "bn": "লংজেভিটি ও মাসল হেলথ"
+    }
+  },
+  "calculators": [
+    {
+      "id": "bmi",
+      "group": "body",
+      "status": "active",
+      "name_en": "BMI Calculator",
+      "name_bn": "বিএমআই ক্যালকুলেটর",
+      "summary_en": "BMI Calculator with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "বিএমআই ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "BMI = kg / m²",
+      "inputs": [
+        "weight_kg",
+        "height_cm"
+      ],
+      "refs": [
+        "WHO"
+      ]
+    },
+    {
+      "id": "healthy-weight",
+      "group": "body",
+      "status": "active",
+      "name_en": "Healthy Weight Range",
+      "name_bn": "স্বাস্থ্যকর ওজনের সীমা",
+      "summary_en": "Healthy Weight Range with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "স্বাস্থ্যকর ওজনের সীমা—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "weight = BMI × height²",
+      "inputs": [
+        "height_cm"
+      ],
+      "refs": [
+        "WHO"
+      ]
+    },
+    {
+      "id": "ideal-body-weight",
+      "group": "body",
+      "status": "active",
+      "name_en": "Ideal Body Weight",
+      "name_bn": "আইডিয়াল বডি ওয়েট",
+      "summary_en": "Ideal Body Weight with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "আইডিয়াল বডি ওয়েট—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "Devine equation",
+      "inputs": [
+        "sex",
+        "height_cm"
+      ],
+      "refs": [
+        "Devine"
+      ]
+    },
+    {
+      "id": "adjusted-body-weight",
+      "group": "body",
+      "status": "active",
+      "name_en": "Adjusted Body Weight",
+      "name_bn": "অ্যাডজাস্টেড বডি ওয়েট",
+      "summary_en": "Adjusted Body Weight with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "অ্যাডজাস্টেড বডি ওয়েট—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "IBW + 0.4×(ABW−IBW)",
+      "inputs": [
+        "sex",
+        "height_cm",
+        "weight_kg"
+      ],
+      "refs": [
+        "Clinical nutrition"
+      ]
+    },
+    {
+      "id": "lean-body-mass",
+      "group": "body",
+      "status": "active",
+      "name_en": "Lean Body Mass",
+      "name_bn": "লিন বডি মাস",
+      "summary_en": "Lean Body Mass with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "লিন বডি মাস—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "Boer equations",
+      "inputs": [
+        "sex",
+        "height_cm",
+        "weight_kg"
+      ],
+      "refs": [
+        "Boer"
+      ]
+    },
+    {
+      "id": "body-fat-navy",
+      "group": "body",
+      "status": "active",
+      "name_en": "Body Fat Percentage",
+      "name_bn": "বডি ফ্যাট শতাংশ",
+      "summary_en": "Body Fat Percentage with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "বডি ফ্যাট শতাংশ—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "US Navy circumference method",
+      "inputs": [
+        "sex",
+        "height_cm",
+        "waist_cm",
+        "neck_cm",
+        "hip_cm"
+      ],
+      "refs": [
+        "US Navy"
+      ]
+    },
+    {
+      "id": "waist-height-ratio",
+      "group": "body",
+      "status": "active",
+      "name_en": "Waist-to-Height Ratio",
+      "name_bn": "কোমর-উচ্চতা অনুপাত",
+      "summary_en": "Waist-to-Height Ratio with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "কোমর-উচ্চতা অনুপাত—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "waist / height",
+      "inputs": [
+        "waist_cm",
+        "height_cm"
+      ],
+      "refs": [
+        "WHtR literature"
+      ]
+    },
+    {
+      "id": "waist-hip-ratio",
+      "group": "body",
+      "status": "active",
+      "name_en": "Waist-to-Hip Ratio",
+      "name_bn": "কোমর-নিতম্ব অনুপাত",
+      "summary_en": "Waist-to-Hip Ratio with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "কোমর-নিতম্ব অনুপাত—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "waist / hip",
+      "inputs": [
+        "waist_cm",
+        "hip_cm"
+      ],
+      "refs": [
+        "WHO"
+      ]
+    },
+    {
+      "id": "absi",
+      "group": "body",
+      "status": "active",
+      "name_en": "A Body Shape Index",
+      "name_bn": "ABSI ক্যালকুলেটর",
+      "summary_en": "A Body Shape Index with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "ABSI ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "waist/(BMI^(2/3)×height^(1/2))",
+      "inputs": [
+        "weight_kg",
+        "height_cm",
+        "waist_cm"
+      ],
+      "refs": [
+        "Krakauer"
+      ]
+    },
+    {
+      "id": "bai",
+      "group": "body",
+      "status": "active",
+      "name_en": "Body Adiposity Index",
+      "name_bn": "বডি অ্যাডিপোসিটি ইনডেক্স",
+      "summary_en": "Body Adiposity Index with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "বডি অ্যাডিপোসিটি ইনডেক্স—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "hip/height^1.5−18",
+      "inputs": [
+        "hip_cm",
+        "height_cm"
+      ],
+      "refs": [
+        "BAI publication"
+      ]
+    },
+    {
+      "id": "ffmi",
+      "group": "body",
+      "status": "active",
+      "name_en": "Fat-Free Mass Index",
+      "name_bn": "ফ্যাট-ফ্রি মাস ইনডেক্স",
+      "summary_en": "Fat-Free Mass Index with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "ফ্যাট-ফ্রি মাস ইনডেক্স—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "FFM / height²",
+      "inputs": [
+        "weight_kg",
+        "height_cm",
+        "body_fat_pct"
+      ],
+      "refs": [
+        "Body composition literature"
+      ]
+    },
+    {
+      "id": "bmr-mifflin",
+      "group": "energy",
+      "status": "active",
+      "name_en": "BMR Calculator",
+      "name_bn": "BMR ক্যালকুলেটর",
+      "summary_en": "BMR Calculator with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "BMR ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "Mifflin-St Jeor",
+      "inputs": [
+        "sex",
+        "age",
+        "weight_kg",
+        "height_cm"
+      ],
+      "refs": [
+        "Mifflin-St Jeor"
+      ]
+    },
+    {
+      "id": "tdee",
+      "group": "energy",
+      "status": "active",
+      "name_en": "TDEE Calculator",
+      "name_bn": "TDEE ক্যালকুলেটর",
+      "summary_en": "TDEE Calculator with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "TDEE ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "BMR × activity factor",
+      "inputs": [
+        "sex",
+        "age",
+        "weight_kg",
+        "height_cm",
+        "activity_factor"
+      ],
+      "refs": [
+        "Mifflin + activity"
+      ]
+    },
+    {
+      "id": "calorie-deficit",
+      "group": "energy",
+      "status": "active",
+      "name_en": "Calorie Deficit Planner",
+      "name_bn": "ক্যালরি ডেফিসিট প্ল্যানার",
+      "summary_en": "Calorie Deficit Planner with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "ক্যালরি ডেফিসিট প্ল্যানার—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "TDEE − deficit",
+      "inputs": [
+        "tdee",
+        "deficit_kcal"
+      ],
+      "refs": [
+        "Energy balance"
+      ]
+    },
+    {
+      "id": "protein",
+      "group": "energy",
+      "status": "active",
+      "name_en": "Protein Intake Calculator",
+      "name_bn": "প্রোটিন চাহিদা ক্যালকুলেটর",
+      "summary_en": "Protein Intake Calculator with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "প্রোটিন চাহিদা ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "weight × g/kg",
+      "inputs": [
+        "weight_kg",
+        "protein_factor"
+      ],
+      "refs": [
+        "DRI / sports nutrition"
+      ]
+    },
+    {
+      "id": "water",
+      "group": "energy",
+      "status": "active",
+      "name_en": "Water Intake Calculator",
+      "name_bn": "পানি চাহিদা ক্যালকুলেটর",
+      "summary_en": "Water Intake Calculator with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "পানি চাহিদা ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "weight × mL/kg",
+      "inputs": [
+        "weight_kg",
+        "water_ml_per_kg"
+      ],
+      "refs": [
+        "Clinical fluid estimation"
+      ]
+    },
+    {
+      "id": "fiber",
+      "group": "energy",
+      "status": "active",
+      "name_en": "Fiber Intake Calculator",
+      "name_bn": "ফাইবার চাহিদা ক্যালকুলেটর",
+      "summary_en": "Fiber Intake Calculator with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "ফাইবার চাহিদা ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "14 g / 1000 kcal",
+      "inputs": [
+        "calories"
+      ],
+      "refs": [
+        "US DRI"
+      ]
+    },
+    {
+      "id": "macro",
+      "group": "energy",
+      "status": "active",
+      "name_en": "Macronutrient Split",
+      "name_bn": "ম্যাক্রোনিউট্রিয়েন্ট ক্যালকুলেটর",
+      "summary_en": "Macronutrient Split with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "ম্যাক্রোনিউট্রিয়েন্ট ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "4/4/9 kcal factors",
+      "inputs": [
+        "calories",
+        "protein_pct",
+        "carb_pct",
+        "fat_pct"
+      ],
+      "refs": [
+        "Atwater"
+      ]
+    },
+    {
+      "id": "carbohydrate",
+      "group": "energy",
+      "status": "active",
+      "name_en": "Carbohydrate Target",
+      "name_bn": "কার্বোহাইড্রেট টার্গেট",
+      "summary_en": "Carbohydrate Target with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "কার্বোহাইড্রেট টার্গেট—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "kcal×%/4",
+      "inputs": [
+        "calories",
+        "carb_pct"
+      ],
+      "refs": [
+        "Atwater"
+      ]
+    },
+    {
+      "id": "fat-intake",
+      "group": "energy",
+      "status": "active",
+      "name_en": "Fat Intake Calculator",
+      "name_bn": "ফ্যাট ইনটেক ক্যালকুলেটর",
+      "summary_en": "Fat Intake Calculator with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "ফ্যাট ইনটেক ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "kcal×%/9",
+      "inputs": [
+        "calories",
+        "fat_pct"
+      ],
+      "refs": [
+        "Atwater"
+      ]
+    },
+    {
+      "id": "meal-protein",
+      "group": "energy",
+      "status": "active",
+      "name_en": "Protein Per Meal",
+      "name_bn": "প্রতি মিল প্রোটিন",
+      "summary_en": "Protein Per Meal with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "প্রতি মিল প্রোটিন—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "daily protein / meals",
+      "inputs": [
+        "daily_protein_g",
+        "meals"
+      ],
+      "refs": [
+        "Meal planning"
+      ]
+    },
+    {
+      "id": "hba1c-eag",
+      "group": "metabolic",
+      "status": "active",
+      "name_en": "HbA1c to eAG",
+      "name_bn": "HbA1c থেকে eAG",
+      "summary_en": "HbA1c to eAG with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "HbA1c থেকে eAG—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "28.7×A1c−46.7",
+      "inputs": [
+        "hba1c"
+      ],
+      "refs": [
+        "ADAG"
+      ]
+    },
+    {
+      "id": "eag-hba1c",
+      "group": "metabolic",
+      "status": "active",
+      "name_en": "eAG to HbA1c",
+      "name_bn": "eAG থেকে HbA1c",
+      "summary_en": "eAG to HbA1c with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "eAG থেকে HbA1c—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "(eAG+46.7)/28.7",
+      "inputs": [
+        "eag_mgdl"
+      ],
+      "refs": [
+        "ADAG"
+      ]
+    },
+    {
+      "id": "homa-ir",
+      "group": "metabolic",
+      "status": "active",
+      "name_en": "HOMA-IR Calculator",
+      "name_bn": "HOMA-IR ক্যালকুলেটর",
+      "summary_en": "HOMA-IR Calculator with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "HOMA-IR ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "glucose×insulin/405",
+      "inputs": [
+        "fasting_glucose_mgdl",
+        "fasting_insulin"
+      ],
+      "refs": [
+        "HOMA"
+      ]
+    },
+    {
+      "id": "quicki",
+      "group": "metabolic",
+      "status": "active",
+      "name_en": "QUICKI Calculator",
+      "name_bn": "QUICKI ক্যালকুলেটর",
+      "summary_en": "QUICKI Calculator with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "QUICKI ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "1/[log insulin + log glucose]",
+      "inputs": [
+        "fasting_glucose_mgdl",
+        "fasting_insulin"
+      ],
+      "refs": [
+        "QUICKI"
+      ]
+    },
+    {
+      "id": "tyg",
+      "group": "metabolic",
+      "status": "active",
+      "name_en": "TyG Index",
+      "name_bn": "TyG ইনডেক্স",
+      "summary_en": "TyG Index with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "TyG ইনডেক্স—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "ln(TG×glucose/2)",
+      "inputs": [
+        "triglycerides_mgdl",
+        "fasting_glucose_mgdl"
+      ],
+      "refs": [
+        "TyG literature"
+      ]
+    },
+    {
+      "id": "tg-hdl",
+      "group": "metabolic",
+      "status": "active",
+      "name_en": "TG/HDL Ratio",
+      "name_bn": "TG/HDL অনুপাত",
+      "summary_en": "TG/HDL Ratio with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "TG/HDL অনুপাত—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "TG / HDL",
+      "inputs": [
+        "triglycerides_mgdl",
+        "hdl_mgdl"
+      ],
+      "refs": [
+        "Lipid literature"
+      ]
+    },
+    {
+      "id": "non-hdl",
+      "group": "metabolic",
+      "status": "active",
+      "name_en": "Non-HDL Cholesterol",
+      "name_bn": "নন-HDL কোলেস্টেরল",
+      "summary_en": "Non-HDL Cholesterol with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "নন-HDL কোলেস্টেরল—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "TC − HDL",
+      "inputs": [
+        "total_chol_mgdl",
+        "hdl_mgdl"
+      ],
+      "refs": [
+        "Lipid guidelines"
+      ]
+    },
+    {
+      "id": "remnant-cholesterol",
+      "group": "metabolic",
+      "status": "active",
+      "name_en": "Remnant Cholesterol",
+      "name_bn": "রেমন্যান্ট কোলেস্টেরল",
+      "summary_en": "Remnant Cholesterol with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "রেমন্যান্ট কোলেস্টেরল—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "TC − LDL − HDL",
+      "inputs": [
+        "total_chol_mgdl",
+        "ldl_mgdl",
+        "hdl_mgdl"
+      ],
+      "refs": [
+        "Lipid literature"
+      ]
+    },
+    {
+      "id": "egfr-2021",
+      "group": "kidney",
+      "status": "active",
+      "name_en": "eGFR CKD-EPI 2021",
+      "name_bn": "eGFR CKD-EPI 2021",
+      "summary_en": "eGFR CKD-EPI 2021 with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "eGFR CKD-EPI 2021—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "2021 CKD-EPI creatinine equation",
+      "inputs": [
+        "sex",
+        "age",
+        "creatinine_mgdl"
+      ],
+      "refs": [
+        "CKD-EPI 2021"
+      ]
+    },
+    {
+      "id": "crcl",
+      "group": "kidney",
+      "status": "active",
+      "name_en": "Creatinine Clearance",
+      "name_bn": "Creatinine Clearance",
+      "summary_en": "Creatinine Clearance with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "Creatinine Clearance—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "Cockcroft-Gault",
+      "inputs": [
+        "sex",
+        "age",
+        "weight_kg",
+        "creatinine_mgdl"
+      ],
+      "refs": [
+        "Cockcroft-Gault"
+      ]
+    },
+    {
+      "id": "bsa",
+      "group": "kidney",
+      "status": "active",
+      "name_en": "Body Surface Area",
+      "name_bn": "বডি সারফেস এরিয়া",
+      "summary_en": "Body Surface Area with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "বডি সারফেস এরিয়া—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "Mosteller",
+      "inputs": [
+        "height_cm",
+        "weight_kg"
+      ],
+      "refs": [
+        "Mosteller"
+      ]
+    },
+    {
+      "id": "uacr",
+      "group": "kidney",
+      "status": "active",
+      "name_en": "Urine Albumin-Creatinine Ratio",
+      "name_bn": "UACR ক্যালকুলেটর",
+      "summary_en": "Urine Albumin-Creatinine Ratio with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "UACR ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "albumin / creatinine",
+      "inputs": [
+        "urine_albumin_mgL",
+        "urine_creatinine_gL"
+      ],
+      "refs": [
+        "KDIGO"
+      ]
+    },
+    {
+      "id": "anion-gap",
+      "group": "lab",
+      "status": "active",
+      "name_en": "Anion Gap",
+      "name_bn": "অ্যানায়ন গ্যাপ",
+      "summary_en": "Anion Gap with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "অ্যানায়ন গ্যাপ—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "Na−(Cl+HCO3)",
+      "inputs": [
+        "sodium",
+        "chloride",
+        "bicarbonate"
+      ],
+      "refs": [
+        "Clinical chemistry"
+      ]
+    },
+    {
+      "id": "corrected-calcium",
+      "group": "lab",
+      "status": "active",
+      "name_en": "Corrected Calcium",
+      "name_bn": "করেক্টেড ক্যালসিয়াম",
+      "summary_en": "Corrected Calcium with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "করেক্টেড ক্যালসিয়াম—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "Ca+0.8×(4−albumin)",
+      "inputs": [
+        "calcium_mgdl",
+        "albumin_gdl"
+      ],
+      "refs": [
+        "Clinical correction"
+      ]
+    },
+    {
+      "id": "corrected-sodium",
+      "group": "lab",
+      "status": "active",
+      "name_en": "Corrected Sodium",
+      "name_bn": "করেক্টেড সোডিয়াম",
+      "summary_en": "Corrected Sodium with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "করেক্টেড সোডিয়াম—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "Na+1.6×((glucose−100)/100)",
+      "inputs": [
+        "sodium",
+        "glucose_mgdl"
+      ],
+      "refs": [
+        "Clinical correction"
+      ]
+    },
+    {
+      "id": "serum-osmolality",
+      "group": "lab",
+      "status": "active",
+      "name_en": "Serum Osmolality",
+      "name_bn": "সিরাম অসমোলালিটি",
+      "summary_en": "Serum Osmolality with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "সিরাম অসমোলালিটি—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "2Na+glucose/18+BUN/2.8",
+      "inputs": [
+        "sodium",
+        "glucose_mgdl",
+        "bun_mgdl"
+      ],
+      "refs": [
+        "Clinical chemistry"
+      ]
+    },
+    {
+      "id": "map",
+      "group": "cardio",
+      "status": "active",
+      "name_en": "Mean Arterial Pressure",
+      "name_bn": "Mean Arterial Pressure",
+      "summary_en": "Mean Arterial Pressure with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "Mean Arterial Pressure—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "DBP+(SBP−DBP)/3",
+      "inputs": [
+        "sbp",
+        "dbp"
+      ],
+      "refs": [
+        "Hemodynamics"
+      ]
+    },
+    {
+      "id": "pulse-pressure",
+      "group": "cardio",
+      "status": "active",
+      "name_en": "Pulse Pressure",
+      "name_bn": "Pulse Pressure",
+      "summary_en": "Pulse Pressure with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "Pulse Pressure—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "SBP−DBP",
+      "inputs": [
+        "sbp",
+        "dbp"
+      ],
+      "refs": [
+        "Hemodynamics"
+      ]
+    },
+    {
+      "id": "target-heart-rate",
+      "group": "fitness",
+      "status": "active",
+      "name_en": "Target Heart Rate",
+      "name_bn": "টার্গেট হার্ট রেট",
+      "summary_en": "Target Heart Rate with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "টার্গেট হার্ট রেট—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "Karvonen",
+      "inputs": [
+        "age",
+        "resting_hr",
+        "intensity_low",
+        "intensity_high"
+      ],
+      "refs": [
+        "Karvonen"
+      ]
+    },
+    {
+      "id": "pace",
+      "group": "fitness",
+      "status": "active",
+      "name_en": "Running Pace",
+      "name_bn": "রানিং পেস",
+      "summary_en": "Running Pace with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "রানিং পেস—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "time / distance",
+      "inputs": [
+        "distance_km",
+        "time_min"
+      ],
+      "refs": [
+        "Exercise calculation"
+      ]
+    },
+    {
+      "id": "one-rep-max",
+      "group": "fitness",
+      "status": "active",
+      "name_en": "One-Rep Max",
+      "name_bn": "১RM ক্যালকুলেটর",
+      "summary_en": "One-Rep Max with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "১RM ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "Epley",
+      "inputs": [
+        "lift_weight_kg",
+        "reps"
+      ],
+      "refs": [
+        "Epley"
+      ]
+    },
+    {
+      "id": "pregnancy-due-date",
+      "group": "women",
+      "status": "active",
+      "name_en": "Pregnancy Due Date",
+      "name_bn": "প্রেগন্যান্সি ডিউ ডেট",
+      "summary_en": "Pregnancy Due Date with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "প্রেগন্যান্সি ডিউ ডেট—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "LMP + 280 days",
+      "inputs": [
+        "lmp_date"
+      ],
+      "refs": [
+        "Naegele"
+      ]
+    },
+    {
+      "id": "gestational-age",
+      "group": "women",
+      "status": "active",
+      "name_en": "Gestational Age",
+      "name_bn": "গর্ভকাল ক্যালকুলেটর",
+      "summary_en": "Gestational Age with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "গর্ভকাল ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "today − LMP",
+      "inputs": [
+        "lmp_date"
+      ],
+      "refs": [
+        "Obstetric dating"
+      ]
+    },
+    {
+      "id": "ovulation",
+      "group": "women",
+      "status": "active",
+      "name_en": "Ovulation Calculator",
+      "name_bn": "ওভুলেশন ক্যালকুলেটর",
+      "summary_en": "Ovulation Calculator with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "ওভুলেশন ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "next period − 14 days",
+      "inputs": [
+        "cycle_start_date",
+        "cycle_length"
+      ],
+      "refs": [
+        "Cycle estimate"
+      ]
+    },
+    {
+      "id": "fertile-window",
+      "group": "women",
+      "status": "active",
+      "name_en": "Fertile Window",
+      "name_bn": "ফার্টাইল উইন্ডো",
+      "summary_en": "Fertile Window with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "ফার্টাইল উইন্ডো—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "ovulation−5 to +1",
+      "inputs": [
+        "cycle_start_date",
+        "cycle_length"
+      ],
+      "refs": [
+        "Cycle estimate"
+      ]
+    },
+    {
+      "id": "fib4",
+      "group": "clinical",
+      "status": "active",
+      "name_en": "FIB-4 Index",
+      "name_bn": "FIB-4 ইনডেক্স",
+      "summary_en": "FIB-4 Index with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "FIB-4 ইনডেক্স—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "age×AST/(platelets×√ALT)",
+      "inputs": [
+        "age",
+        "ast",
+        "alt",
+        "platelets"
+      ],
+      "refs": [
+        "FIB-4"
+      ]
+    },
+    {
+      "id": "apri",
+      "group": "clinical",
+      "status": "active",
+      "name_en": "APRI Calculator",
+      "name_bn": "APRI ক্যালকুলেটর",
+      "summary_en": "APRI Calculator with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "APRI ক্যালকুলেটর—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "(AST/ULN)/platelets×100",
+      "inputs": [
+        "ast",
+        "ast_uln",
+        "platelets"
+      ],
+      "refs": [
+        "APRI"
+      ]
+    },
+    {
+      "id": "nitrogen-balance",
+      "group": "clinical",
+      "status": "active",
+      "name_en": "Nitrogen Balance",
+      "name_bn": "নাইট্রোজেন ব্যালান্স",
+      "summary_en": "Nitrogen Balance with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "নাইট্রোজেন ব্যালান্স—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "protein/6.25−(UUN+4)",
+      "inputs": [
+        "protein_g",
+        "uun_g"
+      ],
+      "refs": [
+        "Clinical nutrition"
+      ]
+    },
+    {
+      "id": "glucose-infusion-rate",
+      "group": "clinical",
+      "status": "active",
+      "name_en": "Glucose Infusion Rate",
+      "name_bn": "গ্লুকোজ ইনফিউশন রেট",
+      "summary_en": "Glucose Infusion Rate with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "গ্লুকোজ ইনফিউশন রেট—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "dextrose×1000/(weight×1440)",
+      "inputs": [
+        "dextrose_g_day",
+        "weight_kg"
+      ],
+      "refs": [
+        "Parenteral nutrition"
+      ]
+    },
+    {
+      "id": "maintenance-fluid-child",
+      "group": "child",
+      "status": "active",
+      "name_en": "Pediatric Maintenance Fluid",
+      "name_bn": "শিশুর মেইনটেন্যান্স ফ্লুইড",
+      "summary_en": "Pediatric Maintenance Fluid with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "শিশুর মেইনটেন্যান্স ফ্লুইড—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "100/50/20 mL/kg/day",
+      "inputs": [
+        "weight_kg"
+      ],
+      "refs": [
+        "Holliday-Segar"
+      ]
+    },
+    {
+      "id": "mid-parental-height",
+      "group": "child",
+      "status": "active",
+      "name_en": "Mid-Parental Height",
+      "name_bn": "মিড-প্যারেন্টাল হাইট",
+      "summary_en": "Mid-Parental Height with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "মিড-প্যারেন্টাল হাইট—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "sex-specific mid-parental height",
+      "inputs": [
+        "sex",
+        "father_height_cm",
+        "mother_height_cm"
+      ],
+      "refs": [
+        "Pediatric growth"
+      ]
+    },
+    {
+      "id": "older-adult-protein",
+      "group": "ageing",
+      "status": "active",
+      "name_en": "Older Adult Protein Target",
+      "name_bn": "বয়স্কদের প্রোটিন টার্গেট",
+      "summary_en": "Older Adult Protein Target with formula, practical interpretation, limitations and bilingual guidance for everyday health and nutrition use.",
+      "summary_bn": "বয়স্কদের প্রোটিন টার্গেট—সূত্র, ব্যবহারিক ব্যাখ্যা, limitations এবং বাংলা-ইংরেজি guidance সহ।",
+      "formula": "weight × g/kg",
+      "inputs": [
+        "weight_kg",
+        "protein_factor"
+      ],
+      "refs": [
+        "Older-adult nutrition"
+      ]
+    },
+    {
+      "id": "ckm-risk-explorer",
+      "group": "ckm",
+      "status": "active",
+      "name_en": "SHUDDHO Cardiometabolic Risk Explorer",
+      "name_bn": "SHUDDHO কার্ডিওমেটাবলিক রিস্ক এক্সপ্লোরার",
+      "summary_en": "Original non-diagnostic cardiometabolic risk-factor index using age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol and eGFR. It does not reproduce AHA PREVENT.",
+      "summary_bn": "Age, systolic pressure, smoking, diabetes, BMI, non-HDL cholesterol ও eGFR ব্যবহার করে original non-diagnostic risk-factor index। এটি AHA PREVENT কপি করে না।",
+      "formula": "Original weighted risk-factor index (0–100), not an event-probability model",
+      "inputs": [
+        "age",
+        "sbp",
+        "smoker",
+        "diabetes",
+        "bmi",
+        "non_hdl",
+        "egfr"
+      ],
+      "refs": [
+        "Cardiovascular-kidney-metabolic health literature",
+        "General cardiovascular risk-factor literature"
+      ]
+    },
+    {
+      "id": "child-growth-z-learning",
+      "group": "child",
+      "status": "active",
+      "name_en": "Child Growth Z-Score Learning Tool",
+      "name_bn": "শিশুর গ্রোথ Z-স্কোর লার্নিং টুল",
+      "summary_en": "Calculates a standard z-score from a measurement, reference mean and SD supplied by the user. It does not reproduce WHO LMS tables.",
+      "summary_bn": "User-provided measurement, reference mean ও SD থেকে standard z-score হিসাব করে। এটি WHO LMS table কপি করে না।",
+      "formula": "z = (measurement − reference mean) / reference SD",
+      "inputs": [
+        "measurement",
+        "reference_mean",
+        "reference_sd"
+      ],
+      "refs": [
+        "Standard score mathematics",
+        "Use official WHO growth references for clinical assessment"
+      ]
+    },
+    {
+      "id": "kidney-risk-factor-explorer",
+      "group": "kidney",
+      "status": "active",
+      "name_en": "SHUDDHO Kidney Risk Factor Explorer",
+      "name_bn": "SHUDDHO কিডনি রিস্ক ফ্যাক্টর এক্সপ্লোরার",
+      "summary_en": "Original kidney-risk factor index using eGFR, UACR, diabetes, systolic pressure and age. It is not KFRE and does not predict kidney-failure probability.",
+      "summary_bn": "eGFR, UACR, diabetes, systolic pressure ও age থেকে original kidney-risk factor index। এটি KFRE নয়।",
+      "formula": "Original weighted factor index (0–100), not KFRE",
+      "inputs": [
+        "age",
+        "egfr",
+        "uacr",
+        "diabetes",
+        "sbp"
+      ],
+      "refs": [
+        "KDIGO CKD risk domains",
+        "General CKD progression literature"
+      ]
+    },
+    {
+      "id": "personalized-nutrition-profile",
+      "group": "personalized",
+      "status": "active",
+      "name_en": "Personalized Nutrition Profile",
+      "name_bn": "পার্সোনালাইজড নিউট্রিশন প্রোফাইল",
+      "summary_en": "Rule-based nutrition profile combining activity, sleep, fruit/vegetable intake, protein and fiber to highlight priorities. It is not a medical AI diagnosis.",
+      "summary_bn": "Activity, sleep, ফল-সবজি, protein ও fiber intake মিলিয়ে priority দেখায়। এটি medical AI diagnosis নয়।",
+      "formula": "Original multi-domain nutrition priority score (0–100)",
+      "inputs": [
+        "activity_days",
+        "sleep_hours",
+        "fruitveg_servings",
+        "protein_g",
+        "fiber_g",
+        "weight_kg"
+      ],
+      "refs": [
+        "General dietary-pattern and lifestyle guidance"
+      ]
+    },
+    {
+      "id": "microbiome-diversity-score",
+      "group": "microbiome",
+      "status": "active",
+      "name_en": "Microbiome-Friendly Diet Diversity Score",
+      "name_bn": "মাইক্রোবায়োম-ফ্রেন্ডলি ডায়েট ডাইভার্সিটি স্কোর",
+      "summary_en": "Original food-diversity score using weekly plant variety, fermented-food frequency and fiber intake. It does not infer microbiome sequencing results.",
+      "summary_bn": "Weekly plant variety, fermented food frequency ও fiber intake থেকে original diet-diversity score। এটি microbiome sequencing result অনুমান করে না।",
+      "formula": "Original diet diversity score (0–100)",
+      "inputs": [
+        "plant_variety_week",
+        "fermented_servings_week",
+        "fiber_g"
+      ],
+      "refs": [
+        "Diet diversity and microbiome literature"
+      ]
+    },
+    {
+      "id": "sarcopenia-nutrition-screen",
+      "group": "healthy-ageing",
+      "status": "active",
+      "name_en": "Muscle & Sarcopenia Nutrition Screen",
+      "name_bn": "মাসল ও সারকোপেনিয়া নিউট্রিশন স্ক্রিন",
+      "summary_en": "Nutrition-oriented muscle risk screen using age, protein intake, strength activity and recent unintentional weight loss.",
+      "summary_bn": "Age, protein intake, strength activity ও recent unintentional weight loss ব্যবহার করে nutrition-oriented muscle risk screen।",
+      "formula": "Original screening score (0–100), not a diagnosis",
+      "inputs": [
+        "age",
+        "weight_kg",
+        "protein_g",
+        "strength_days",
+        "weight_loss_pct"
+      ],
+      "refs": [
+        "Healthy ageing and protein literature"
+      ]
+    },
+    {
+      "id": "protein-distribution-score",
+      "group": "healthy-ageing",
+      "status": "active",
+      "name_en": "Protein Distribution Score",
+      "name_bn": "প্রোটিন ডিস্ট্রিবিউশন স্কোর",
+      "summary_en": "Evaluates how evenly daily protein is distributed across three meals.",
+      "summary_bn": "দৈনিক protein তিনটি meal-এর মধ্যে কতটা evenly distributed তা মূল্যায়ন করে।",
+      "formula": "Balance score from breakfast, lunch and dinner protein",
+      "inputs": [
+        "breakfast_protein",
+        "lunch_protein",
+        "dinner_protein"
+      ],
+      "refs": [
+        "Protein distribution literature"
+      ]
+    },
+    {
+      "id": "plant-diversity",
+      "group": "microbiome",
+      "status": "active",
+      "name_en": "Weekly Plant Diversity Calculator",
+      "name_bn": "সাপ্তাহিক প্ল্যান্ট ডাইভার্সিটি ক্যালকুলেটর",
+      "summary_en": "Tracks the number of distinct plant foods eaten in a week.",
+      "summary_bn": "এক সপ্তাহে কত ধরনের distinct plant food খাওয়া হয়েছে তা track করে।",
+      "formula": "Distinct plant foods per week",
+      "inputs": [
+        "plant_variety_week"
+      ],
+      "refs": [
+        "Diet diversity literature"
+      ]
+    },
+    {
+      "id": "sodium-target",
+      "group": "energy",
+      "status": "active",
+      "name_en": "Sodium Intake Target Tool",
+      "name_bn": "সোডিয়াম ইনটেক টার্গেট টুল",
+      "summary_en": "Compares entered sodium intake with a user-selected daily target.",
+      "summary_bn": "Entered sodium intake-কে user-selected daily target-এর সাথে compare করে।",
+      "formula": "difference = intake − target",
+      "inputs": [
+        "sodium_mg",
+        "target_mg"
+      ],
+      "refs": [
+        "Dietary sodium guidance"
+      ]
+    },
+    {
+      "id": "potassium-intake",
+      "group": "energy",
+      "status": "active",
+      "name_en": "Potassium Intake Gap Tool",
+      "name_bn": "পটাশিয়াম ইনটেক গ্যাপ টুল",
+      "summary_en": "Compares entered potassium intake with a user-selected daily target.",
+      "summary_bn": "Entered potassium intake-কে selected daily target-এর সাথে compare করে।",
+      "formula": "gap = target − intake",
+      "inputs": [
+        "potassium_mg",
+        "target_mg"
+      ],
+      "refs": [
+        "Dietary potassium guidance"
+      ]
+    },
+    {
+      "id": "sleep-nutrition-recovery",
+      "group": "personalized",
+      "status": "active",
+      "name_en": "Sleep & Nutrition Recovery Score",
+      "name_bn": "স্লিপ ও নিউট্রিশন রিকভারি স্কোর",
+      "summary_en": "Original lifestyle score combining sleep duration, protein adequacy, hydration and activity.",
+      "summary_bn": "Sleep duration, protein adequacy, hydration ও activity মিলিয়ে original lifestyle recovery score।",
+      "formula": "Original lifestyle score (0–100)",
+      "inputs": [
+        "sleep_hours",
+        "protein_g",
+        "protein_target_g",
+        "water_ml",
+        "water_target_ml",
+        "activity_days"
+      ],
+      "refs": [
+        "Sleep, nutrition and recovery literature"
+      ]
+    },
+    {
+      "id": "metabolic-flexibility-score",
+      "group": "ckm",
+      "status": "active",
+      "name_en": "Metabolic Flexibility Lifestyle Score",
+      "name_bn": "মেটাবলিক ফ্লেক্সিবিলিটি লাইফস্টাইল স্কোর",
+      "summary_en": "Original lifestyle score using activity, waist-to-height ratio, triglycerides, HDL and fasting glucose.",
+      "summary_bn": "Activity, WHtR, triglycerides, HDL ও fasting glucose থেকে original lifestyle score।",
+      "formula": "Original composite score (0–100)",
+      "inputs": [
+        "activity_days",
+        "waist_height_ratio",
+        "triglycerides_mgdl",
+        "hdl_mgdl",
+        "fasting_glucose_mgdl"
+      ],
+      "refs": [
+        "Metabolic health literature"
+      ]
+    }
+  ]
+}

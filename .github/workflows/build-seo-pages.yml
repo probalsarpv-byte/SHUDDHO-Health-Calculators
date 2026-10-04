@@ -1,0 +1,54 @@
+name: Build Calculator SEO Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths:
+      - "data/calculators.json"
+      - "calculator-engine.js"
+      - "calculator-ui.js"
+      - "calculator-page.css"
+      - "scripts/generate-seo.js"
+      - ".github/workflows/build-seo-pages.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: calculator-seo
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate bilingual calculator SEO pages
+        env:
+          BASE_URL: "https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators"
+        run: node scripts/generate-seo.js
+
+      - name: Validate generated files
+        run: |
+          test -f calculator/bmi/index.html
+          test -f sitemap.xml
+          test -f robots.txt
+          test -f calculator-manifest.json
+          COUNT=$(find calculator -mindepth 1 -maxdepth 1 -type d | wc -l)
+          echo "Generated calculator folders: $COUNT"
+          test "$COUNT" -ge 60
+
+      - name: Commit generated pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add calculator sitemap.xml robots.txt .nojekyll calculator-manifest.json
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git commit -m "Auto-generate calculator SEO pages"
+          git push
