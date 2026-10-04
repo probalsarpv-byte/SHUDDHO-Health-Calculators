@@ -75,3 +75,29 @@ body.embed-mode .top,body.embed-mode .hero{display:none}body.embed-mode .layout{
 @media(max-width:1000px){.layout{grid-template-columns:1fr}.rightcol{position:static;display:grid;grid-template-columns:1fr 1fr;gap:16px}.rightcol .card{margin:0}.result-card{grid-column:1/-1}}
 @media(max-width:700px){.fields,.details-grid,.insight-grid,.rightcol{grid-template-columns:1fr}.result-shell{grid-template-columns:1fr}.gauge{margin:auto}.result-value{text-align:center}.hero .inner{padding:44px 0 38px}.card{padding:19px}.share-row{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}#mini3d{display:none}}
+
+/* V5.3 — cleaner food-database-inspired navigation */
+.navleft{display:flex;align-items:center;gap:9px}.back-page{width:38px;height:38px;padding:0;font-size:20px;font-weight:900}
+.page-tools{display:flex;gap:8px;overflow-x:auto;padding:12px 0 0;scrollbar-width:thin}.toolchip{white-space:nowrap;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:12px;font-weight:800;backdrop-filter:blur(14px)}
+.hero{min-height:285px}.hero .inner{padding:46px 0 39px}.hero h1{font-size:clamp(34px,5vw,58px)}
+.calculator-card,.result-card{box-shadow:0 18px 55px rgba(0,0,0,.18)}
+.card{border-radius:20px}.details-grid{gap:8px}
+@media(max-width:1000px){
+  .layout{display:grid;grid-template-columns:1fr;gap:0}
+  .leftcol,.rightcol{display:contents}
+  .calc-panel{order:1}
+  .result-card{order:2;margin-bottom:17px!important}
+  .related-card{order:3;margin-bottom:17px!important}
+  .details-card{order:4}
+  .how-card{order:5}
+  .limitations-card{order:6}
+  .faq-card{order:7}
+  .refs-card{order:8}
+}
+@media(max-width:700px){
+  .top .row{padding:8px 0}.top a{font-size:14px}
+  .page-tools{padding-top:9px}
+  .hero{min-height:245px}.hero .inner{padding:34px 0 30px}.hero h1{font-size:clamp(31px,10vw,45px)}
+  .layout{padding-top:16px}.card{padding:17px;border-radius:17px}
+}
+body.embed-mode .page-tools{display:none}

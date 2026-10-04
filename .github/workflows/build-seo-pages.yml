@@ -66,6 +66,7 @@ jobs:
           test -f sync/sync-engine.js
           test -f firebase/firebase-config.js
           test -f firebase/firestore.rules
+          test -f navigation.js
           grep -q "interpretation-engine.js" calculator/bmi/index.html
           COUNT=$(find calculator -mindepth 1 -maxdepth 1 -type d | wc -l)
           echo "Generated calculator folders: $COUNT"

@@ -81,6 +81,17 @@
       ],
       "refs": [
         "WHO"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -97,6 +108,17 @@
       ],
       "refs": [
         "WHO"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -114,6 +136,19 @@
       ],
       "refs": [
         "Devine"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all",
+        "men",
+        "women"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -132,6 +167,17 @@
       ],
       "refs": [
         "Clinical nutrition"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -150,6 +196,19 @@
       ],
       "refs": [
         "Boer"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all",
+        "men",
+        "women"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -170,6 +229,19 @@
       ],
       "refs": [
         "US Navy"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all",
+        "men",
+        "women"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -187,6 +259,17 @@
       ],
       "refs": [
         "WHtR literature"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -204,6 +287,17 @@
       ],
       "refs": [
         "WHO"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -222,6 +316,17 @@
       ],
       "refs": [
         "Krakauer"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -239,6 +344,17 @@
       ],
       "refs": [
         "BAI publication"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -257,6 +373,17 @@
       ],
       "refs": [
         "Body composition literature"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -276,6 +403,17 @@
       ],
       "refs": [
         "Mifflin-St Jeor"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -296,6 +434,17 @@
       ],
       "refs": [
         "Mifflin + activity"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -313,6 +462,17 @@
       ],
       "refs": [
         "Energy balance"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -330,6 +490,17 @@
       ],
       "refs": [
         "DRI / sports nutrition"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -347,6 +518,17 @@
       ],
       "refs": [
         "Clinical fluid estimation"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -363,6 +545,18 @@
       ],
       "refs": [
         "US DRI"
+      ],
+      "disease_tags": [
+        "general",
+        "gut",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -382,6 +576,17 @@
       ],
       "refs": [
         "Atwater"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -399,6 +604,17 @@
       ],
       "refs": [
         "Atwater"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -416,6 +632,17 @@
       ],
       "refs": [
         "Atwater"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -433,6 +660,17 @@
       ],
       "refs": [
         "Meal planning"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -449,6 +687,17 @@
       ],
       "refs": [
         "ADAG"
+      ],
+      "disease_tags": [
+        "diabetes",
+        "general",
+        "metabolic"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -465,6 +714,17 @@
       ],
       "refs": [
         "ADAG"
+      ],
+      "disease_tags": [
+        "diabetes",
+        "general",
+        "metabolic"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -482,6 +742,17 @@
       ],
       "refs": [
         "HOMA"
+      ],
+      "disease_tags": [
+        "diabetes",
+        "general",
+        "metabolic"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -499,6 +770,17 @@
       ],
       "refs": [
         "QUICKI"
+      ],
+      "disease_tags": [
+        "diabetes",
+        "general",
+        "metabolic"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -516,6 +798,17 @@
       ],
       "refs": [
         "TyG literature"
+      ],
+      "disease_tags": [
+        "diabetes",
+        "general",
+        "metabolic"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -533,6 +826,17 @@
       ],
       "refs": [
         "Lipid literature"
+      ],
+      "disease_tags": [
+        "diabetes",
+        "general",
+        "metabolic"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -550,6 +854,18 @@
       ],
       "refs": [
         "Lipid guidelines"
+      ],
+      "disease_tags": [
+        "diabetes",
+        "general",
+        "heart",
+        "metabolic"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -568,6 +884,18 @@
       ],
       "refs": [
         "Lipid literature"
+      ],
+      "disease_tags": [
+        "diabetes",
+        "general",
+        "heart",
+        "metabolic"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -586,6 +914,16 @@
       ],
       "refs": [
         "CKD-EPI 2021"
+      ],
+      "disease_tags": [
+        "general",
+        "kidney"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -605,6 +943,16 @@
       ],
       "refs": [
         "Cockcroft-Gault"
+      ],
+      "disease_tags": [
+        "general",
+        "kidney"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -622,6 +970,16 @@
       ],
       "refs": [
         "Mosteller"
+      ],
+      "disease_tags": [
+        "general",
+        "kidney"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -639,6 +997,16 @@
       ],
       "refs": [
         "KDIGO"
+      ],
+      "disease_tags": [
+        "general",
+        "kidney"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -657,6 +1025,16 @@
       ],
       "refs": [
         "Clinical chemistry"
+      ],
+      "disease_tags": [
+        "general",
+        "lab"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -674,6 +1052,16 @@
       ],
       "refs": [
         "Clinical correction"
+      ],
+      "disease_tags": [
+        "general",
+        "lab"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -691,6 +1079,16 @@
       ],
       "refs": [
         "Clinical correction"
+      ],
+      "disease_tags": [
+        "general",
+        "lab"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -709,6 +1107,16 @@
       ],
       "refs": [
         "Clinical chemistry"
+      ],
+      "disease_tags": [
+        "general",
+        "lab"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -726,6 +1134,16 @@
       ],
       "refs": [
         "Hemodynamics"
+      ],
+      "disease_tags": [
+        "general",
+        "heart"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -743,6 +1161,16 @@
       ],
       "refs": [
         "Hemodynamics"
+      ],
+      "disease_tags": [
+        "general",
+        "heart"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -762,6 +1190,16 @@
       ],
       "refs": [
         "Karvonen"
+      ],
+      "disease_tags": [
+        "fitness",
+        "general"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -779,6 +1217,16 @@
       ],
       "refs": [
         "Exercise calculation"
+      ],
+      "disease_tags": [
+        "fitness",
+        "general"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -796,6 +1244,16 @@
       ],
       "refs": [
         "Epley"
+      ],
+      "disease_tags": [
+        "fitness",
+        "general"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -812,6 +1270,17 @@
       ],
       "refs": [
         "Naegele"
+      ],
+      "disease_tags": [
+        "general",
+        "women"
+      ],
+      "gender_tags": [
+        "women"
+      ],
+      "age_tags": [
+        "adult",
+        "pregnancy"
       ]
     },
     {
@@ -828,6 +1297,17 @@
       ],
       "refs": [
         "Obstetric dating"
+      ],
+      "disease_tags": [
+        "general",
+        "women"
+      ],
+      "gender_tags": [
+        "women"
+      ],
+      "age_tags": [
+        "adult",
+        "pregnancy"
       ]
     },
     {
@@ -845,6 +1325,16 @@
       ],
       "refs": [
         "Cycle estimate"
+      ],
+      "disease_tags": [
+        "general",
+        "women"
+      ],
+      "gender_tags": [
+        "women"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -862,6 +1352,16 @@
       ],
       "refs": [
         "Cycle estimate"
+      ],
+      "disease_tags": [
+        "general",
+        "women"
+      ],
+      "gender_tags": [
+        "women"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -881,6 +1381,16 @@
       ],
       "refs": [
         "FIB-4"
+      ],
+      "disease_tags": [
+        "general",
+        "liver"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -899,6 +1409,16 @@
       ],
       "refs": [
         "APRI"
+      ],
+      "disease_tags": [
+        "general",
+        "liver"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -916,6 +1436,16 @@
       ],
       "refs": [
         "Clinical nutrition"
+      ],
+      "disease_tags": [
+        "general",
+        "liver"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -933,6 +1463,18 @@
       ],
       "refs": [
         "Parenteral nutrition"
+      ],
+      "disease_tags": [
+        "diabetes",
+        "general",
+        "liver",
+        "metabolic"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -949,6 +1491,16 @@
       ],
       "refs": [
         "Holliday-Segar"
+      ],
+      "disease_tags": [
+        "child",
+        "general"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "child"
       ]
     },
     {
@@ -967,6 +1519,16 @@
       ],
       "refs": [
         "Pediatric growth"
+      ],
+      "disease_tags": [
+        "child",
+        "general"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "child"
       ]
     },
     {
@@ -984,6 +1546,17 @@
       ],
       "refs": [
         "Older-adult nutrition"
+      ],
+      "disease_tags": [
+        "general",
+        "muscle-ageing"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult",
+        "older-adult"
       ]
     },
     {
@@ -1007,6 +1580,17 @@
       "refs": [
         "Cardiovascular-kidney-metabolic health literature",
         "General cardiovascular risk-factor literature"
+      ],
+      "disease_tags": [
+        "diabetes",
+        "general",
+        "metabolic"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -1026,6 +1610,16 @@
       "refs": [
         "Standard score mathematics",
         "Use official WHO growth references for clinical assessment"
+      ],
+      "disease_tags": [
+        "child",
+        "general"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "child"
       ]
     },
     {
@@ -1047,6 +1641,16 @@
       "refs": [
         "KDIGO CKD risk domains",
         "General CKD progression literature"
+      ],
+      "disease_tags": [
+        "general",
+        "kidney"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -1068,6 +1672,17 @@
       ],
       "refs": [
         "General dietary-pattern and lifestyle guidance"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -1086,6 +1701,16 @@
       ],
       "refs": [
         "Diet diversity and microbiome literature"
+      ],
+      "disease_tags": [
+        "general",
+        "gut"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -1106,6 +1731,17 @@
       ],
       "refs": [
         "Healthy ageing and protein literature"
+      ],
+      "disease_tags": [
+        "general",
+        "muscle-ageing"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult",
+        "older-adult"
       ]
     },
     {
@@ -1124,6 +1760,17 @@
       ],
       "refs": [
         "Protein distribution literature"
+      ],
+      "disease_tags": [
+        "general",
+        "muscle-ageing"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult",
+        "older-adult"
       ]
     },
     {
@@ -1140,6 +1787,16 @@
       ],
       "refs": [
         "Diet diversity literature"
+      ],
+      "disease_tags": [
+        "general",
+        "gut"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -1157,6 +1814,17 @@
       ],
       "refs": [
         "Dietary sodium guidance"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -1174,6 +1842,17 @@
       ],
       "refs": [
         "Dietary potassium guidance"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -1195,6 +1874,17 @@
       ],
       "refs": [
         "Sleep, nutrition and recovery literature"
+      ],
+      "disease_tags": [
+        "general",
+        "nutrition",
+        "weight"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     },
     {
@@ -1215,7 +1905,114 @@
       ],
       "refs": [
         "Metabolic health literature"
+      ],
+      "disease_tags": [
+        "diabetes",
+        "general",
+        "metabolic"
+      ],
+      "gender_tags": [
+        "all"
+      ],
+      "age_tags": [
+        "adult"
       ]
     }
-  ]
+  ],
+  "filter_labels": {
+    "disease": {
+      "all": {
+        "en": "All health areas",
+        "bn": "সব স্বাস্থ্য ক্ষেত্র"
+      },
+      "weight": {
+        "en": "Weight & Body",
+        "bn": "ওজন ও শরীর"
+      },
+      "nutrition": {
+        "en": "Nutrition",
+        "bn": "পুষ্টি"
+      },
+      "diabetes": {
+        "en": "Diabetes",
+        "bn": "ডায়াবেটিস"
+      },
+      "metabolic": {
+        "en": "Metabolic Health",
+        "bn": "মেটাবলিক স্বাস্থ্য"
+      },
+      "heart": {
+        "en": "Heart & Lipids",
+        "bn": "হৃদ্‌স্বাস্থ্য ও লিপিড"
+      },
+      "kidney": {
+        "en": "Kidney",
+        "bn": "কিডনি"
+      },
+      "liver": {
+        "en": "Liver",
+        "bn": "লিভার"
+      },
+      "gut": {
+        "en": "Gut & Microbiome",
+        "bn": "গাট ও মাইক্রোবায়োম"
+      },
+      "muscle-ageing": {
+        "en": "Muscle & Ageing",
+        "bn": "মাসল ও হেলদি এজিং"
+      },
+      "fitness": {
+        "en": "Fitness",
+        "bn": "ফিটনেস"
+      },
+      "women": {
+        "en": "Women’s Health",
+        "bn": "নারী স্বাস্থ্য"
+      },
+      "child": {
+        "en": "Child Health",
+        "bn": "শিশু স্বাস্থ্য"
+      },
+      "lab": {
+        "en": "Lab & Electrolytes",
+        "bn": "ল্যাব ও ইলেক্ট্রোলাইট"
+      }
+    },
+    "gender": {
+      "all": {
+        "en": "All",
+        "bn": "সবার জন্য"
+      },
+      "women": {
+        "en": "Women",
+        "bn": "নারী"
+      },
+      "men": {
+        "en": "Men",
+        "bn": "পুরুষ"
+      }
+    },
+    "age": {
+      "all": {
+        "en": "All ages",
+        "bn": "সব বয়স"
+      },
+      "child": {
+        "en": "Child",
+        "bn": "শিশু"
+      },
+      "adult": {
+        "en": "Adult",
+        "bn": "প্রাপ্তবয়স্ক"
+      },
+      "older-adult": {
+        "en": "Older adult",
+        "bn": "বয়স্ক"
+      },
+      "pregnancy": {
+        "en": "Pregnancy",
+        "bn": "গর্ভাবস্থা"
+      }
+    }
+  }
 }

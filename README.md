@@ -80,3 +80,18 @@ V5.2 adds an optional account layer on top of local-first storage:
 - no server/admin secret is required in the GitHub repository
 
 See `firebase/SETUP.md`.
+
+## V5.3 Navigation & Discovery Upgrade
+V5.3 preserves all V5/V5.1/V5.2 calculators, assessments, trackers, profile, Firebase optional sync and integrations.
+
+Changes:
+- Removed the visible “Embed in Blogger / iframe” section from calculator pages.
+- `?embed=1` compact rendering remains available internally for Blogger embedding.
+- Back button on calculator pages and every platform module page.
+- Food-database-style compact calculator directory.
+- Sticky horizontal filtering instead of long group-by-group scrolling.
+- Four discovery axes: category, disease/health area, gender, and age.
+- Search works together with classification.
+- Important platform modules and popular calculators are shown on the landing page.
+- Calculator pages use a cleaner compact visual hierarchy.
+- Mobile order is calculator → result → related → details → how it works → limitations → FAQ → references.
