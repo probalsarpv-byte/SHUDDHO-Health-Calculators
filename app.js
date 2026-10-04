@@ -1,1 +1,86 @@
-const state={lang:localStorage.getItem("shuddhoCalcLang")||"bn",catalog:null};const $=(s,c=document)=>c.querySelector(s);const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));async function init(){const r=await fetch("./data/calculators.json?v=1");state.catalog=await r.json();render()}function t(o){return state.lang==="bn"?(o.bn||o.en):(o.en||o.bn)}function render(){const c=state.catalog;$("#app").innerHTML=`<header class="hero"><div class="wrap"><div class="top"><b>SHUDDHO Health Calculators</b><button id="lang">${state.lang==="bn"?"English":"বাংলা"}</button></div><h1>${state.lang==="bn"?"পুষ্টি ও স্বাস্থ্য ক্যালকুলেটর":"Nutrition & Health Calculators"}</h1><p>${state.lang==="bn"?"বাংলা ও English-এ evidence-informed calculators. সব calculation আপনার browser-এ হয়।":"Evidence-informed calculators in English and Bangla. Calculations run in your browser."}</p><input id="q" placeholder="${state.lang==="bn"?"ক্যালকুলেটর খুঁজুন":"Search calculators"}"></div></header><main class="wrap" id="main"></main><footer class="wrap">Educational/reference use only. Clinical calculators do not replace professional assessment.</footer>`;$("#lang").onclick=()=>{state.lang=state.lang==="bn"?"en":"bn";localStorage.setItem("shuddhoCalcLang",state.lang);render()};$("#q").oninput=e=>draw(e.target.value);draw("")}function draw(query){const c=state.catalog,q=query.trim().toLowerCase(),host=$("#main");let html="";for(const[gid,g]of Object.entries(c.groups)){if(gid==="future")continue;const items=c.calculators.filter(x=>x.group===gid&&x.status==="active"&&(!q||`${x.name_en} ${x.name_bn} ${x.summary_en} ${x.summary_bn}`.toLowerCase().includes(q)));if(!items.length)continue;html+=`<section id="${gid}"><h2>${esc(t(g))}</h2><div class="grid">${items.map(x=>`<a class="card" href="./calculator/${x.id}/"><h3>${esc(state.lang==="bn"?x.name_bn:x.name_en)}</h3><p>${esc(state.lang==="bn"?x.summary_bn:x.summary_en)}</p><span>${state.lang==="bn"?"খুলুন →":"Open →"}</span></a>`).join("")}</div></section>`}host.innerHTML=html||`<p>No calculator found.</p>`}init();
+
+const state={lang:storageGet("shuddhoCalcLang")||"bn",theme:storageGet("shuddhoCalcTheme")||((matchMedia&&matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark"),data:null};
+const $=(s,c=document)=>c.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+function storageGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function storageSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function label(obj){return state.lang==="bn"?(obj.bn||obj.en):(obj.en||obj.bn)}
+async function init(){
+  document.documentElement.dataset.theme=state.theme;
+  const r=await fetch("./data/calculators.json?v=3");
+  if(!r.ok) throw new Error("Calculator catalog could not be loaded.");
+  state.data=await r.json();
+  render();
+  init3D();
+  initReveal();
+  if("serviceWorker" in navigator) navigator.serviceWorker.register("./service-worker.js").catch(()=>{});
+}
+function render(){
+  const active=state.data.calculators.filter(x=>x.status==="active");
+  document.documentElement.dataset.theme=state.theme;
+  $("#app").innerHTML=`
+    <header class="topbar"><div class="wrap row">
+      <div class="brand">SHUDDHO <span>Health Calculators</span></div>
+      <div class="actions">
+        <button class="pillbtn" id="langBtn">${state.lang==="bn"?"EN":"বাংলা"}</button>
+        <button class="iconbtn" id="themeBtn">${state.theme==="dark"?"☀️":"🌙"}</button>
+      </div>
+    </div></header>
+    <section class="hero">
+      <canvas id="hero3d" aria-hidden="true"></canvas>
+      <div class="wrap content">
+        <span class="kicker">65 tools · Bangla + English · browser-based</span>
+        <h1>${state.lang==="bn"?'আপনার <span class="gradient">Health Data</span> বুঝুন':'Understand your <span class="gradient">Health Data</span>'}</h1>
+        <p>${state.lang==="bn"?"Nutrition, metabolic health, kidney, fitness, pregnancy, child health ও healthy ageing—সব calculator এক জায়গায়।":"Nutrition, metabolic health, kidney, fitness, pregnancy, child health and healthy ageing calculators in one premium bilingual hub."}</p>
+        <div class="searchbox"><input id="q" aria-label="Search calculators" placeholder="${state.lang==="bn"?"ক্যালকুলেটর খুঁজুন...":"Search calculators..."}"></div>
+        <div class="stats">
+          <div class="stat"><b>${active.length}</b><small>${state.lang==="bn"?"Active calculators":"Active calculators"}</small></div>
+          <div class="stat"><b>${Object.keys(state.data.groups).length}</b><small>${state.lang==="bn"?"Categories":"Categories"}</small></div>
+          <div class="stat"><b>2</b><small>${state.lang==="bn"?"Languages":"Languages"}</small></div>
+          <div class="stat"><b>100%</b><small>${state.lang==="bn"?"Client-side":"Client-side"}</small></div>
+        </div>
+      </div>
+    </section>
+    <main id="main" class="wrap"></main>
+    <footer class="footer"><div class="wrap">Educational/reference use only. Clinical tools do not replace professional assessment.</div></footer>`;
+  $("#langBtn").onclick=()=>{state.lang=state.lang==="bn"?"en":"bn";storageSet("shuddhoCalcLang",state.lang);render();init3D();initReveal()};
+  $("#themeBtn").onclick=()=>{state.theme=state.theme==="dark"?"light":"dark";storageSet("shuddhoCalcTheme",state.theme);render();init3D();initReveal()};
+  $("#q").oninput=e=>draw(e.target.value);
+  draw("");
+}
+function draw(query){
+  const q=query.trim().toLowerCase(), host=$("#main"); let html="";
+  for(const [gid,g] of Object.entries(state.data.groups)){
+    if(gid==="future") continue;
+    const items=state.data.calculators.filter(x=>x.group===gid&&x.status==="active"&&(!q||`${x.name_en} ${x.name_bn} ${x.summary_en} ${x.summary_bn}`.toLowerCase().includes(q)));
+    if(!items.length) continue;
+    html+=`<section class="section reveal" id="${gid}"><div class="section-head"><div><h2>${esc(label(g))}</h2><p>${items.length} tools</p></div></div><div class="grid">${items.map(x=>`<a class="card" href="./calculator/${x.id}/"><span class="tag">${esc(g.en)}</span><h3>${esc(state.lang==="bn"?x.name_bn:x.name_en)}</h3><p>${esc(state.lang==="bn"?x.summary_bn:x.summary_en)}</p><span class="open">${state.lang==="bn"?"খুলুন →":"Open calculator →"}</span></a>`).join("")}</div></section>`;
+  }
+  host.innerHTML=html||`<div class="empty">No calculator found.</div>`;
+  initReveal();
+}
+function initReveal(){
+  const els=[...document.querySelectorAll(".reveal")];
+  if(!("IntersectionObserver" in window)){els.forEach(x=>x.classList.add("on"));return}
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}}),{threshold:.08});
+  els.forEach(x=>io.observe(x));
+}
+function init3D(){
+  const canvas=$("#hero3d"); if(!canvas||!window.THREE||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  const hero=canvas.parentElement, scene=new THREE.Scene(), camera=new THREE.PerspectiveCamera(55,1,.1,100);
+  camera.position.z=7;
+  const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));
+  const group=new THREE.Group();scene.add(group);
+  const mat=new THREE.MeshPhysicalMaterial({color:state.theme==="dark"?0x39d6a0:0x087b58,roughness:.22,metalness:.15,transmission:.18,transparent:true,opacity:.74});
+  const geo=new THREE.IcosahedronGeometry(1.45,2), mesh=new THREE.Mesh(geo,mat);group.add(mesh);
+  const ringMat=new THREE.MeshBasicMaterial({color:state.theme==="dark"?0x5ca8ff:0x2563eb,wireframe:true,transparent:true,opacity:.22});
+  const ring=new THREE.Mesh(new THREE.TorusKnotGeometry(2.15,.055,160,18),ringMat);group.add(ring);
+  const dots=new THREE.Points(new THREE.BufferGeometry(),new THREE.PointsMaterial({size:.045,color:state.theme==="dark"?0xb78cff:0x7c3aed,transparent:true,opacity:.65}));
+  const pts=[];for(let i=0;i<420;i++){const r=3.1+Math.random()*1.4,a=Math.random()*Math.PI*2,b=Math.acos(2*Math.random()-1);pts.push(r*Math.sin(b)*Math.cos(a),r*Math.sin(b)*Math.sin(a),r*Math.cos(b))}
+  dots.geometry.setAttribute("position",new THREE.Float32BufferAttribute(pts,3));scene.add(dots);
+  function resize(){const w=hero.clientWidth,h=hero.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix()}resize();addEventListener("resize",resize,{passive:true});
+  let mx=0,my=0;hero.addEventListener("pointermove",e=>{mx=(e.clientX/innerWidth-.5)*.35;my=(e.clientY/innerHeight-.5)*.2},{passive:true});
+  function tick(){group.rotation.y+=.003;group.rotation.x+=.0015;dots.rotation.y-=.0007;group.position.x+=(mx-group.position.x)*.03;group.position.y+=(-my-group.position.y)*.03;renderer.render(scene,camera);requestAnimationFrame(tick)}tick();
+}
+init().catch(err=>{document.body.innerHTML=`<main class="wrap" style="padding:40px"><h1>Loading error</h1><p>${esc(err.message)}</p><p>Make sure <code>data/calculators.json</code> exists in the repository.</p></main>`});
