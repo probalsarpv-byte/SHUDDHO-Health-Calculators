@@ -33,3 +33,17 @@ main{padding:28px 0 68px}.section{margin:20px 0 34px}.section-head{display:flex;
 @media(max-width:900px){.module-grid,.compact-grid{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.hero{min-height:470px}.hero:after{background:linear-gradient(180deg,var(--bg) 10%,color-mix(in srgb,var(--bg) 74%,transparent),transparent)}}
 @media(max-width:620px){.module-grid,.compact-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.hero .content{padding-top:48px}.topbar .brand span{display:none}.linkbtn{display:none}.explorer{top:57px;margin-left:-5px;margin-right:-5px;border-radius:16px}.results-head{align-items:flex-start;flex-direction:column}.section-head{align-items:flex-start}.count{font-size:12px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}#hero3d{display:none}}
+
+/* V5.4 Unified Health Profile spotlight */
+.module-grid .module-card:first-child{
+  grid-column:span 2;
+  background:
+    radial-gradient(circle at 8% 20%,color-mix(in srgb,var(--brand) 19%,transparent),transparent 34%),
+    radial-gradient(circle at 95% 10%,color-mix(in srgb,var(--brand2) 18%,transparent),transparent 34%),
+    linear-gradient(135deg,var(--card),color-mix(in srgb,var(--card-solid) 92%,transparent));
+  border-color:color-mix(in srgb,var(--brand) 45%,var(--line));
+  min-height:128px
+}
+.module-grid .module-card:first-child h3{font-size:21px}
+.module-grid .module-card:first-child .module-icon{width:48px;height:48px;font-size:24px}
+@media(max-width:900px){.module-grid .module-card:first-child{grid-column:1/-1}}

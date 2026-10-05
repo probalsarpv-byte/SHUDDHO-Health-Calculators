@@ -23,6 +23,7 @@ on:
       - "personalization/**"
       - "local-data.js"
       - "account/**"
+      - "unified-health/**"
       - "sync/**"
       - "firebase/**"
       - "platform-modules.css"
@@ -62,6 +63,8 @@ jobs:
           test -f profile/index.html
           test -f privacy/index.html
           test -f account/index.html
+          test -f unified-health/index.html
+          test -f unified-health/unified-health.js
           test -f sync/bootstrap.js
           test -f sync/sync-engine.js
           test -f firebase/firebase-config.js

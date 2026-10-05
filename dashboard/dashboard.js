@@ -1,16 +1,18 @@
 
 const $=s=>document.querySelector(s);
-let A={},T={},P={};
+let A={},T={},P={},U=null;
 try{
   A=JSON.parse(localStorage.getItem("shuddhoAssessmentsV5")||"{}");
   T=JSON.parse(localStorage.getItem("shuddhoTrackerV5")||"{}");
   P=SHUDDHO_LOCAL.migrateProfile()||{};
+  U=JSON.parse(localStorage.getItem("shuddhoUnifiedHealthV54")||"null");
 }catch(e){}
 const av=Object.values(A),avg=av.length?Math.round(av.reduce((s,x)=>s+(x.score||0),0)/av.length):null,metrics=Object.keys(T).filter(k=>T[k]?.length);
 $("#summary").innerHTML=`
 <div class="card"><h3>${P.display_name?`Welcome, ${P.display_name}`:"Your local profile"}</h3><div class="score">${P.age||"—"}</div><p>${P.goal?`Goal: ${P.goal}`:"Set your goal to personalize the platform."}</p><a href="../profile/">Edit local profile →</a></div>
 <div class="card"><h3>Assessment profile</h3><div class="score ${avg===null?'':avg>=75?'good':avg>=50?'warn':'bad'}">${avg===null?'—':avg}</div><p>${av.length} assessment(s) saved locally</p></div>
-<div class="card"><h3>Tracked metrics</h3><div class="score">${metrics.length}</div><p>${metrics.join(", ")||"No tracker data yet"}</p></div>`;
+<div class="card"><h3>Tracked metrics</h3><div class="score">${metrics.length}</div><p>${metrics.join(", ")||"No tracker data yet"}</p></div>
+<div class="card"><h3>Unified Health Profile</h3><div class="score ${U&&U.overall>=75?'good':U&&U.overall>=50?'warn':U?'bad':''}">${U?Math.round(U.overall):"—"}</div><p>${U?`Confidence: ${U.confidence} · Coverage ${U.coveragePct}%`:"Run the unified profile to understand overall health domains."}</p><a href="../unified-health/">${U?"Review profile":"Start unified health check"} →</a></div>`;
 $("#assess").innerHTML=av.length?av.sort((a,b)=>b.date.localeCompare(a.date)).slice(0,8).map(x=>`<div class="choice"><strong>${x.name}</strong><br>Score: ${x.score}/100 · ${x.status}</div>`).join(""):"<p class='muted'>No assessment results yet.</p>";
 $("#track").innerHTML=metrics.length?metrics.map(k=>{const d=T[k].slice().sort((a,b)=>a.date.localeCompare(b.date)),x=d.at(-1);return `<div class="choice"><strong>${k}</strong><br>Latest: ${x.value} · ${x.date}</div>`}).join(""):"<p class='muted'>No tracker data yet.</p>";
 

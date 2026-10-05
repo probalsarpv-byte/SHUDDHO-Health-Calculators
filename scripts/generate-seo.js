@@ -5,7 +5,7 @@ const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>
 const active=data.calculators.filter(x=>x.status==="active");
 const byGroup={};for(const c of active)(byGroup[c.group]??=[]).push(c);
 fs.rmSync("calculator",{recursive:true,force:true});fs.mkdirSync("calculator",{recursive:true});
-const modulePaths=["assessments/","trackers/","labs/","food-tools/","medication-nutrition/","dashboard/","profile/","planner/","challenges/","reports/","learn/","symptoms/","reminders/","professional/","onboarding/","privacy/","account/"];
+const modulePaths=["assessments/","trackers/","labs/","food-tools/","medication-nutrition/","dashboard/","profile/","planner/","challenges/","reports/","learn/","symptoms/","reminders/","professional/","onboarding/","privacy/","account/","unified-health/"];
 const moduleUrls=modulePaths.map(p=>`${BASE}/${p}`);
 const urls=[];
 for(const c of active){
@@ -107,5 +107,5 @@ const xml=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sit
 fs.writeFileSync("sitemap.xml",xml);
 fs.writeFileSync("robots.txt",`User-agent: *\nAllow: /\n\nSitemap: ${BASE}/sitemap.xml\n`);
 fs.writeFileSync(".nojekyll","");
-fs.writeFileSync("calculator-manifest.json",JSON.stringify({version:"5.3.0",active_calculators:active.length,groups:Object.keys(data.groups).length,generated_urls:urls.length+moduleUrls.length+1,base_url:BASE,features:["bilingual","result interpretation","dark-light","threejs","iframe mode","seo faq","assessments","trackers","lab interpreter","food database integration","MediNutrition integration","dashboard","planner","reports","local-only profile","privacy center","personalization","optional Firebase auth","hybrid local-first auto sync","cross-device sync","classification explorer","back navigation","compact calculator directory"]},null,2));
+fs.writeFileSync("calculator-manifest.json",JSON.stringify({version:"5.4.0",active_calculators:active.length,groups:Object.keys(data.groups).length,generated_urls:urls.length+moduleUrls.length+1,base_url:BASE,features:["bilingual","result interpretation","dark-light","threejs","iframe mode","seo faq","assessments","trackers","lab interpreter","food database integration","MediNutrition integration","dashboard","planner","reports","local-only profile","privacy center","personalization","optional Firebase auth","hybrid local-first auto sync","cross-device sync","classification explorer","back navigation","compact calculator directory","unified health profile","health domain map","overall health context score"]},null,2));
 console.log(`Generated ${active.length} calculator pages`);

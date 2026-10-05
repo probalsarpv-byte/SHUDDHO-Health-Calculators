@@ -1,8 +1,8 @@
 {
-  "version": "5.3.0",
+  "version": "5.4.0",
   "active_calculators": 65,
   "groups": 16,
-  "generated_urls": 83,
+  "generated_urls": 84,
   "base_url": "https://probalsarpv-byte.github.io/SHUDDHO-Health-Calculators",
   "features": [
     "bilingual",
@@ -27,6 +27,9 @@
     "cross-device sync",
     "classification explorer",
     "back navigation",
-    "compact calculator directory"
+    "compact calculator directory",
+    "unified health profile",
+    "health domain map",
+    "overall health context score"
   ]
 }

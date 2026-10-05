@@ -95,3 +95,23 @@ Changes:
 - Important platform modules and popular calculators are shown on the landing page.
 - Calculator pages use a cleaner compact visual hierarchy.
 - Mobile order is calculator → result → related → details → how it works → limitations → FAQ → references.
+
+## V5.4 — Unified Health Intelligence
+V5.4 preserves every V5, V5.1, V5.2 and V5.3 module and adds one major new module:
+
+### SHUDDHO Unified Health Profile
+- separate prominent landing-page card; existing Health Assessments remain unchanged
+- Quick Mode for basic measurements/lifestyle
+- Advanced Mode with optional lab values
+- original SHUDDHO educational context score (0–100), explicitly not a validated disease-risk probability
+- domain map for body composition, metabolic health, heart, kidney, liver, nutrition, sleep/recovery, muscle/function and lifestyle/gut
+- radar-style health wheel
+- top priorities, protective factors and missing-data detection
+- data-coverage confidence level
+- suggested next steps and linked SHUDDHO tools
+- red-flag symptom gate before scoring
+- local profile/tracker auto-fill
+- local save + optional Firebase sync compatibility
+- dashboard and report integration
+- Print / Save PDF support
+- back navigation retained throughout the platform

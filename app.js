@@ -16,7 +16,7 @@ function goBack(){if(history.length>1)history.back();else location.href="./"}
 
 async function init(){
   document.documentElement.dataset.theme=state.theme;
-  const r=await fetch("./data/calculators.json?v=5.3");
+  const r=await fetch("./data/calculators.json?v=5.4");
   if(!r.ok) throw new Error("Calculator catalog could not be loaded.");
   state.data=await r.json();
   render();
@@ -84,6 +84,7 @@ function iconFor(g){
 }
 function moduleCards(){
   const modules=[
+    ["unified-health/","Unified Health Profile","সমন্বিত স্বাস্থ্য মূল্যায়ন","Overall health status across body, metabolic, heart, kidney, liver, nutrition, sleep, muscle and lifestyle","◎"],
     ["assessments/","Health Assessments","স্বাস্থ্য মূল্যায়ন","Result + strengths + priority areas + suggestions","✓"],
     ["trackers/","Health Trackers","হেলথ ট্র্যাকার","Weight, BP, glucose, sleep, water, protein, steps","⌁"],
     ["labs/","Lab Interpreter","ল্যাব রিপোর্ট ব্যাখ্যা","Glucose, HbA1c, lipids, kidney, liver, thyroid, CBC","⚗"],
